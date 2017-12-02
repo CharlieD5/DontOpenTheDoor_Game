@@ -1,10 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/Charlie/Downloads/MultipleThemesApp-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+            "outputFile": "C:\\Users\\Anthony\\Documents\\DontOpenTheDoor_Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
             "map": [
                 {
-                    "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/1eb67f3eae92912cdca86602bec5f019/res/values-v18/values-v18.xml",
+                    "source": "C:\\Users\\Anthony\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\0bc7bc3969f456f4c5ea99759983882f\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Charlie\\Downloads\\MultipleThemesApp-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Charlie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\1eb67f3eae92912cdca86602bec5f019\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
