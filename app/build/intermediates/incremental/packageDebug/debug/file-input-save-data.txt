@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Dec 01 17:36:24 PST 2017
+#Fri Dec 01 18:03:13 PST 2017
 2.base=/Users/Charlie/Downloads/MultipleThemesApp-master/app/build/intermediates/transforms/dexMerger/debug/15
 5.set=DEX
 0.path=classes.dex

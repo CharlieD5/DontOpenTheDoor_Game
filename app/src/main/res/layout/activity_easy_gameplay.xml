@@ -20,7 +20,6 @@
         android:layout_above="@+id/linearLayout"
         android:layout_alignStart="@+id/linearLayout"
         android:layout_marginStart="16dp"
-        android:backgroundTint="@color/Summer_colorPrimaryDark"
         android:src="@drawable/arrow"/>
 
     <ImageView
@@ -73,9 +72,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="@android:color/background_light"
         android:text="SCORE: 0"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/background_dark"/>
 
 
 
