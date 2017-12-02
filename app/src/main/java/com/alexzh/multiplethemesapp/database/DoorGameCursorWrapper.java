@@ -12,7 +12,7 @@ import java.util.UUID;
  * Created by lynnreilly on 11/15/17.
  */
 
-public class DoorGameCursorWrapper extends CursorWrapper{
+public class DoorGameCursorWrapper extends CursorWrapper {
     DoorGameCursorWrapper (Cursor cursor) {
         super(cursor);
     }

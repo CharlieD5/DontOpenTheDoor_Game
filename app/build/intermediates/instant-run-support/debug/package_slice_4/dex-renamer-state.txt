@@ -1,4 +1,0 @@
-#Fri Dec 01 18:30:39 PST 2017
-base.0=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/5
-path.0=classes.dex
-renamed.0=classes.dex

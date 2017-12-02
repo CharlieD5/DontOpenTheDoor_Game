@@ -102,7 +102,7 @@ public class LeaderBoardLab {
                 null, // having
                 null  // orderBy
         );
-        //return new DoorGameCursorWrapper(cursor);
+        return new DoorGameCursorWrapper(cursor);
         return null;
     }
 
