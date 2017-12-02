@@ -73,6 +73,12 @@ public class PlayHard extends BaseActivity {
         a3.setVisibility(View.INVISIBLE);
         a4.setVisibility(View.INVISIBLE);
 
+        //Disables the doors so that cannot be clicked when game hasnt started
+        d1.setEnabled(false);
+        d2.setEnabled(false);
+        d3.setEnabled(false);
+        d4.setEnabled(false);
+
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
