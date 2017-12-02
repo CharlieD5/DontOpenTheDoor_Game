@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="?attr/colorAccent"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/game_over_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Game Over!"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="30sp"
+        android:text="Score: "/>
+
+
+    <ImageButton
+        android:id="@+id/continue_leaderboard_button"
+        android:layout_width="54dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/ic_media_ff"
+        android:backgroundTint="?attr/colorPrimaryDark"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+</LinearLayout>

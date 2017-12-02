@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string name="prefs_theme_key">theme</string>
+    <string name="success_save_msg">Save score successful!</string>
+    <string name="error_save_msg">Enter a name for Player to continue</string>
+</resources>

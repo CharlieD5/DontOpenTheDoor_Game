@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cc000000</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ed092d1a</color>
+    <color name="primary_text_material_light">#def4f1f1</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <!-- Fall Theme -->
+    <color name="Fall_colorPrimary">#ec592305</color>
+    <color name="Fall_colorPrimaryDark">#dc9e01</color>
+    <color name="Fall_colorAccent">#de403b</color>
+    <color name="Fall_primary_text_material_light">#deeae5e5</color>
+
+    <!-- Winter Theme -->
+    <color name="Winter_colorPrimary">#ec055859</color>
+    <color name="Winter_colorPrimaryDark">#0188dc</color>
+    <color name="Winter_colorAccent">#ececec</color>
+    <color name="Winter_primary_text_material_light">#edeae5e5</color>
+
+    <!-- Spring Theme -->
+    <color name="Spring_colorPrimary">#ec000000</color>
+    <color name="Spring_colorPrimaryDark">#9e01dc</color>
+    <color name="Spring_colorAccent">#210026</color>
+    <color name="Spring_primary_text_material_light">#edeae5e5</color>
+
+    <!-- Summer Theme -->
+    <color name="Summer_colorPrimary">#ea062c3e</color>
+    <color name="Summer_colorPrimaryDark">#00b13e</color>
+    <color name="Summer_colorAccent">#fff70b</color>
+    <color name="Summer_primary_text_material_light">#edeae5e5</color>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.alexzh.multiplethemesapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/a1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/arrow"/>
+
+    <ImageView
+        android:id="@+id/a2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginStart="38dp"
+        android:layout_toEndOf="@+id/a1"
+        android:src="@drawable/arrow"/>
+
+    <ImageView
+        android:id="@+id/a3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/a2"
+        android:src="@drawable/arrow"/>
+
+    <ImageView
+        android:id="@+id/a4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/arrow"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout">
+
+        
+        <ImageView
+            android:id="@+id/d1"
+            android:layout_width="85dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/door1"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/d2"
+            android:layout_width="85dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/door1"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/d3"
+            android:layout_width="85dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/door1"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/d4"
+            android:layout_width="85dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/door1"
+            android:layout_height="100dp"/>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/colorPrimaryDark"
+        android:text="START"
+        android:textColor="@color/black_overlay"
+        />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="SCORE: 0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+
+
+</RelativeLayout>
