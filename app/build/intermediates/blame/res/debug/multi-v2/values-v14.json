@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< Updated upstream
             "outputFile": "C:\\Users\\Anthony\\Documents\\DontOpenTheDoor_Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
@@ -21,6 +22,12 @@
             "map": [
                 {
                     "source": "C:\\Users\\Charlie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\1eb67f3eae92912cdca86602bec5f019\\res\\values-v14\\values-v14.xml",
+=======
+            "outputFile": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8b5cee4086dd95badfae43b43c518540/res/values-v14/values-v14.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,7,8,9,15,21,22,23,24,25,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

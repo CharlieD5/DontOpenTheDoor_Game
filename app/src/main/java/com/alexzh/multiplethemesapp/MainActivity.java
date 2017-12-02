@@ -84,7 +84,7 @@ public class MainActivity extends BaseActivity {
     }
 
     public void LeaderboardButtonClick(View view) {
-        Intent intent = new Intent(MainActivity.this, Leaderboard.class);
+        Intent intent = new Intent(MainActivity.this, LeaderBoardActivity.class);
         startActivity(intent);
     }
 

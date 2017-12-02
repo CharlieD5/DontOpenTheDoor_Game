@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< Updated upstream
             "outputFile": "C:\\Users\\Charlie\\Downloads\\MultipleThemesApp-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
@@ -24,6 +25,12 @@
                 },
                 {
                     "source": "C:\\Users\\Charlie\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.0.0-alpha1.aar\\10871046643001cc9b2b7fb1528ec66f\\res\\values-land\\values-land.xml",
+=======
+            "outputFile": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.0.0-alpha1.aar/4c381784559e2b075bead8b1f326f68a/res/values-land/values-land.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -40,7 +47,11 @@
                     }
                 },
                 {
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\Charlie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\1eb67f3eae92912cdca86602bec5f019\\res\\values-land\\values-land.xml",
+=======
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8b5cee4086dd95badfae43b43c518540/res/values-land/values-land.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -55,7 +66,11 @@
             "outputFile": "C:\\Users\\Anthony\\Documents\\DontOpenTheDoor_Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\Anthony\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f89b3cb4cd0f2e19557e566f7a5387bb\\res\\values-land\\values-land.xml",
+=======
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/res/values-land/values-land.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -72,6 +87,7 @@
                         "endColumns": "12",
                         "endOffsets": "733"
                     }
+<<<<<<< Updated upstream
                 },
                 {
                     "source": "C:\\Users\\Anthony\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\0bc7bc3969f456f4c5ea99759983882f\\res\\values-land\\values-land.xml",
@@ -99,6 +115,8 @@
                         "endColumns": "74,77,74",
                         "endOffsets": "398,476,551"
                     }
+=======
+>>>>>>> Stashed changes
                 }
             ]
         }

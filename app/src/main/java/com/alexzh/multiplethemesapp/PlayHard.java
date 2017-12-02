@@ -37,7 +37,6 @@ public class PlayHard extends BaseActivity {
     int which = 0, whichsave = 0;
     int templeft = 0, left = 1;
 
-    DatabaseHelper db;
     AnimationDrawable an;
 
     @Override

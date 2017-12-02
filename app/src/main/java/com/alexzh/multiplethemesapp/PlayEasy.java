@@ -38,7 +38,7 @@ public class PlayEasy extends BaseActivity {
     int which = 0, whichsave = 0;
     int templeft = 0, left = 1;
    // Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-    DatabaseHelper db;
+
     AnimationDrawable an;
 
     @Override
@@ -217,9 +217,9 @@ public class PlayEasy extends BaseActivity {
                         mContinue.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Intent intent = new Intent(PlayEasy.this, Leaderboard.class);
+                                Intent intent = new Intent(PlayEasy.this, LeaderBoardActivity.class);
                                 startActivity(intent);
-                                setContentView(R.layout.activity_leaderboard);
+                                setContentView(R.layout.activity_leader_board);
                             }
                         });
 

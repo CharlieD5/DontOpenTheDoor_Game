@@ -1,5 +1,6 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< Updated upstream
 ADDED from C:\Users\Anthony\Documents\DontOpenTheDoor_Game\app\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from C:\Users\Anthony\Documents\DontOpenTheDoor_Game\app\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from C:\Users\Anthony\Documents\DontOpenTheDoor_Game\app\src\main\AndroidManifest.xml:2:1-38:12
@@ -215,3 +216,207 @@ ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Anthony\.gradle\cache
 		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Anthony\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0758c952dc765241fc17188d73d4e4c9\AndroidManifest.xml:27:13-44
 	android:name
 		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Anthony\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0758c952dc765241fc17188d73d4e4c9\AndroidManifest.xml:26:13-58
+=======
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-38:12
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:mediarouter-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.0.0-alpha1.aar/4c381784559e2b075bead8b1f326f68a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8b5cee4086dd95badfae43b43c518540/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/10c929f2cdf28852948d03315adc905d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/03f0d36a7c7d910a62293ddb224baac3/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/b7545fa0fdb7ace285ac9dc0af5d4b5c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/5b2a19fec7ef75a0ced05d54c8ad89d9/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/d528f460a3f1073fe1432ba38ccefafc/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/7c2d037d701bdc2daddec1bb562efa00/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/31ac53352730c87806b0eb2ede6d5e03/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:palette-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/palette-v7-26.0.0-alpha1.aar/afe73107e9a4b8f7267e666c09c78c97/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/62582eb56e6aa4b54b9d4a62b81b44ae/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/ca75fdee0ed2e4ca56deea4a18470b9a/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/ee75848f34dceea94992fb7d76cbf084/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/2b0c11f48107b4ed0cd8c6a6fa1c6974/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:3:5-43
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:5:5-36:19
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:mediarouter-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.0.0-alpha1.aar/4c381784559e2b075bead8b1f326f68a/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:mediarouter-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.0.0-alpha1.aar/4c381784559e2b075bead8b1f326f68a/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8b5cee4086dd95badfae43b43c518540/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8b5cee4086dd95badfae43b43c518540/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/10c929f2cdf28852948d03315adc905d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/10c929f2cdf28852948d03315adc905d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/03f0d36a7c7d910a62293ddb224baac3/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/03f0d36a7c7d910a62293ddb224baac3/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/b7545fa0fdb7ace285ac9dc0af5d4b5c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/b7545fa0fdb7ace285ac9dc0af5d4b5c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/5b2a19fec7ef75a0ced05d54c8ad89d9/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/5b2a19fec7ef75a0ced05d54c8ad89d9/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/d528f460a3f1073fe1432ba38ccefafc/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/d528f460a3f1073fe1432ba38ccefafc/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/7c2d037d701bdc2daddec1bb562efa00/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/7c2d037d701bdc2daddec1bb562efa00/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/31ac53352730c87806b0eb2ede6d5e03/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/31ac53352730c87806b0eb2ede6d5e03/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:palette-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/palette-v7-26.0.0-alpha1.aar/afe73107e9a4b8f7267e666c09c78c97/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:palette-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/palette-v7-26.0.0-alpha1.aar/afe73107e9a4b8f7267e666c09c78c97/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/62582eb56e6aa4b54b9d4a62b81b44ae/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/62582eb56e6aa4b54b9d4a62b81b44ae/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/ee75848f34dceea94992fb7d76cbf084/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/ee75848f34dceea94992fb7d76cbf084/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/2b0c11f48107b4ed0cd8c6a6fa1c6974/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/2b0c11f48107b4ed0cd8c6a6fa1c6974/AndroidManifest.xml:29:5-20
+	android:supportsRtl
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:8:9-25
+	android:roundIcon
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.alexzh.multiplethemesapp.MainActivity
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.alexzh.multiplethemesapp.ThemesActivity
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:19:9-20:20
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:19:19-49
+activity#com.alexzh.multiplethemesapp.ShareActivity
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:21:9-22:20
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:21:19-48
+activity#com.alexzh.multiplethemesapp.Leaderboard
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:23:9-24:20
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:23:19-46
+activity#com.alexzh.multiplethemesapp.LeaderBoardActivity
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:25:9-26:20
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:25:19-54
+activity#com.alexzh.multiplethemesapp.PlayHard
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:27:9-28:20
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:27:19-43
+activity#com.alexzh.multiplethemesapp.PlayEasy
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:29:9-30:20
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:29:19-43
+activity#com.alexzh.multiplethemesapp.PlayMedium
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:31:9-32:20
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:31:19-45
+activity#com.alexzh.multiplethemesapp.DifficultyActivity
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:33:9-34:20
+	android:name
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:33:19-53
+uses-sdk
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:mediarouter-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.0.0-alpha1.aar/4c381784559e2b075bead8b1f326f68a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:mediarouter-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.0.0-alpha1.aar/4c381784559e2b075bead8b1f326f68a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8b5cee4086dd95badfae43b43c518540/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8b5cee4086dd95badfae43b43c518540/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/10c929f2cdf28852948d03315adc905d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/10c929f2cdf28852948d03315adc905d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/03f0d36a7c7d910a62293ddb224baac3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/03f0d36a7c7d910a62293ddb224baac3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/b7545fa0fdb7ace285ac9dc0af5d4b5c/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/b7545fa0fdb7ace285ac9dc0af5d4b5c/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/5b2a19fec7ef75a0ced05d54c8ad89d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/5b2a19fec7ef75a0ced05d54c8ad89d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/d528f460a3f1073fe1432ba38ccefafc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/d528f460a3f1073fe1432ba38ccefafc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/7c2d037d701bdc2daddec1bb562efa00/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/7c2d037d701bdc2daddec1bb562efa00/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/31ac53352730c87806b0eb2ede6d5e03/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/31ac53352730c87806b0eb2ede6d5e03/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:palette-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/palette-v7-26.0.0-alpha1.aar/afe73107e9a4b8f7267e666c09c78c97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/palette-v7-26.0.0-alpha1.aar/afe73107e9a4b8f7267e666c09c78c97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/62582eb56e6aa4b54b9d4a62b81b44ae/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/62582eb56e6aa4b54b9d4a62b81b44ae/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/ca75fdee0ed2e4ca56deea4a18470b9a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/ca75fdee0ed2e4ca56deea4a18470b9a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/ee75848f34dceea94992fb7d76cbf084/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/ee75848f34dceea94992fb7d76cbf084/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/2b0c11f48107b4ed0cd8c6a6fa1c6974/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/2b0c11f48107b4ed0cd8c6a6fa1c6974/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:mediarouter-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.0.0-alpha1.aar/4c381784559e2b075bead8b1f326f68a/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:mediarouter-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.0.0-alpha1.aar/4c381784559e2b075bead8b1f326f68a/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8b5cee4086dd95badfae43b43c518540/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8b5cee4086dd95badfae43b43c518540/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/03f0d36a7c7d910a62293ddb224baac3/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/03f0d36a7c7d910a62293ddb224baac3/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/b7545fa0fdb7ace285ac9dc0af5d4b5c/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/b7545fa0fdb7ace285ac9dc0af5d4b5c/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/5b2a19fec7ef75a0ced05d54c8ad89d9/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/5b2a19fec7ef75a0ced05d54c8ad89d9/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/d528f460a3f1073fe1432ba38ccefafc/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/d528f460a3f1073fe1432ba38ccefafc/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/7c2d037d701bdc2daddec1bb562efa00/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/7c2d037d701bdc2daddec1bb562efa00/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/31ac53352730c87806b0eb2ede6d5e03/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/31ac53352730c87806b0eb2ede6d5e03/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:palette-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/palette-v7-26.0.0-alpha1.aar/afe73107e9a4b8f7267e666c09c78c97/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:palette-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/palette-v7-26.0.0-alpha1.aar/afe73107e9a4b8f7267e666c09c78c97/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/62582eb56e6aa4b54b9d4a62b81b44ae/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/62582eb56e6aa4b54b9d4a62b81b44ae/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/ca75fdee0ed2e4ca56deea4a18470b9a/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/ca75fdee0ed2e4ca56deea4a18470b9a/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/ee75848f34dceea94992fb7d76cbf084/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/ee75848f34dceea94992fb7d76cbf084/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/2b0c11f48107b4ed0cd8c6a6fa1c6974/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/2b0c11f48107b4ed0cd8c6a6fa1c6974/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c2c3a67a7f0f3edab1ead33f1a435e68/AndroidManifest.xml:26:9-47
+>>>>>>> Stashed changes
