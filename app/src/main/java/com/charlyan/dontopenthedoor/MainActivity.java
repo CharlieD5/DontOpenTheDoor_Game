@@ -43,9 +43,10 @@ public class MainActivity extends BaseActivity {
         }, 2000);
 
         //Adds Background Music
-        final MediaPlayer player = MediaPlayer.create(this, R.raw.scary);
+        final MediaPlayer player = MediaPlayer.create(this, R.raw.elevatorMusic);
         player.setLooping(true);
         player.start();
+
         sound_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 // If the music is playing
