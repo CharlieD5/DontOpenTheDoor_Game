@@ -43,7 +43,7 @@ public class MainActivity extends BaseActivity {
         }, 2000);
 
         //Adds Background Music
-        final MediaPlayer player = MediaPlayer.create(this, R.raw.elevatorMusic);
+        final MediaPlayer player = MediaPlayer.create(this, R.raw.elevator_music);
         player.setLooping(true);
         player.start();
 

@@ -7,13 +7,19 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,8 +45,15 @@ public class PlayHard extends BaseActivity {
     int score =0, fps = 1000;
     int which = 0, whichsave = 0;
     int templeft = 0, left = 1;
-
     AnimationDrawable an;
+
+    //Pop-up Window Variables
+    private PopupWindow popupWindow;
+    private LayoutInflater layoutInflater;
+    private RelativeLayout relativeLayout;
+    Runnable mRunnable;
+    Handler mHandler=new Handler();
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -80,6 +93,17 @@ public class PlayHard extends BaseActivity {
         d2.setEnabled(false);
         d3.setEnabled(false);
         d4.setEnabled(false);
+
+        //Creates the relative Layout to host the pop-up window
+        relativeLayout = (RelativeLayout) findViewById(R.id.hard_relative);
+
+        //Creates handler to close pop-up window and implements the delay
+        mRunnable = new Runnable() {
+            @Override
+            public void run() {
+                relativeLayout.setVisibility(View.GONE);
+            }
+        };
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -244,6 +268,28 @@ public class PlayHard extends BaseActivity {
                 }
 
                 if(left== 0){
+
+                    //Creates Pop-Up window once attempts are depleted
+                    layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
+                    final ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
+
+                    popupWindow = new PopupWindow(container, 800, 800, true);
+                    popupWindow.showAtLocation(relativeLayout, Gravity.CLIP_HORIZONTAL, 500, 500);
+
+                    //Makes on click listener to stop pop-up window once user clicks outside of popup
+                    container.setOnTouchListener(new View.OnTouchListener(){
+                        @Override
+                        public boolean onTouch(View view, MotionEvent motionEvent){
+                            popupWindow.dismiss();
+                            return true;
+
+                           // container.setVisibility(View.VISIBLE);
+                           // mHandler.removeCallbacks(mRunnable);
+                           // mHandler.postDelayed(mRunnable, 10000);
+                        }
+                                                 }
+                    );
+
                     if (score > 45) {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
                         View mView = getLayoutInflater().inflate(R.layout.dialog_new_high_score, null);
