@@ -152,10 +152,6 @@
         "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/door4.jpg"
     },
     {
-        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/layout_activity_share.xml.flat",
-        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_share.xml"
-    },
-    {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
     },

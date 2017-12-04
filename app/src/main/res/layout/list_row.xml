@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
-                android:descendantFocusability="blocksDescendants"
+                android:cacheColorHint="@android:color/transparent"
                 android:paddingBottom="12dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:paddingTop="12dp">
 
 
@@ -15,8 +15,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:textColor="#000"
-        android:textSize="16dp"/>
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="25dp"/>
 
     <TextView
         android:id="@+id/score"
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginRight="8dp"
-        android:textColor="#000"
-        android:textSize="14dp"/>
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="25dp"/>
 
 
 </RelativeLayout>

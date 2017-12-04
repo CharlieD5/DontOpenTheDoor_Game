@@ -260,7 +260,11 @@ public class PlayMedium extends BaseActivity {
                         mContinue.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
+                                Bundle b = new Bundle();
+                                b.putString(NAME_KEY, null);
+                                b.putInt(SCORE_KEY, score);
                                 Intent intent = new Intent(PlayMedium.this, ScoreActivity.class);
+                                intent.putExtras(b);
                                 startActivity(intent);
                                 setContentView(R.layout.activity_score_board);
                             }

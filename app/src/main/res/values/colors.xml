@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#cc000000</color>
+    <color name="colorPrimary">#965b5959</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#ed092d1a</color>
     <color name="primary_text_material_light">#def4f1f1</color>
 
     <color name="black_overlay">#66000000</color>
-
 
     <!-- Fall Theme -->
     <color name="Fall_colorPrimary">#ec592305</color>

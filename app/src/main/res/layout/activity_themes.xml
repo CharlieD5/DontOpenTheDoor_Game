@@ -164,7 +164,7 @@
             android:paddingHorizontal="20dp"
             android:onClick="ExitButtonClick"
             android:textSize="18sp"
-            android:text="EXIT"/>
+            android:text="BACK"/>
     </LinearLayout>
 
 

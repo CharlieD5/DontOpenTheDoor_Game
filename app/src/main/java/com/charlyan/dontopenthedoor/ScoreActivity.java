@@ -2,17 +2,21 @@ package com.charlyan.dontopenthedoor;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.util.List;
 
 
-public class ScoreActivity extends AppCompatActivity {
+public class ScoreActivity extends BaseActivity {
     public static final String NAME_KEY = "NAME";
     public static final String SCORE_KEY = "SCORE";
 

@@ -13,6 +13,10 @@ import android.widget.ImageButton;
 
 
 public class MainActivity extends BaseActivity {
+    Button play_button;
+    Button leaderboardButton;
+    Button theme_button;
+    static final int SCORE = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,11 +24,11 @@ public class MainActivity extends BaseActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main); // Home Screen
-        Button play_button = (Button) findViewById(R.id.play_button);
-        Button leaderboardButton = (Button)findViewById(R.id.leaderboard_button);
-        Button theme_button = (Button) findViewById(R.id.theme_button);
-        final ImageButton sound_button = (ImageButton) findViewById(R.id.sound_button);
-        final ImageButton vibrate_button = (ImageButton) findViewById(R.id.vibrate_button);
+        play_button = findViewById(R.id.play_button);
+        leaderboardButton = findViewById(R.id.leaderboard_button);
+        theme_button = findViewById(R.id.theme_button);
+        final ImageButton sound_button = findViewById(R.id.sound_button);
+        final ImageButton vibrate_button = findViewById(R.id.vibrate_button);
 
         // Alert Dialog greeting that suggests user to use headphones
         new Handler().postDelayed(new Runnable() {
@@ -76,6 +80,13 @@ public class MainActivity extends BaseActivity {
 //            }
 //        });
     }
+
+    public void onStart() {
+        super.onStart();
+
+
+    }
+
 
     public void PlayButtonClick(View view) {
         //setContentView(R.layout.activity_difficulty_selection); // Goes to game difficulty selection: {easy, medium, hard}

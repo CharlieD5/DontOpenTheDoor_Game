@@ -204,7 +204,6 @@ public class PlayEasy extends BaseActivity {
                             public void onClick(View view) {
                                 String name = mPlayerName.getText().toString();
                                 if (!name.isEmpty()) {
-
                                     Bundle b = new Bundle();
                                     b.putString(NAME_KEY, name);
                                     b.putInt(SCORE_KEY, score);
@@ -234,7 +233,11 @@ public class PlayEasy extends BaseActivity {
                         mContinue.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
+                                Bundle b = new Bundle();
+                                b.putString(NAME_KEY, null);
+                                b.putInt(SCORE_KEY, score);
                                 Intent intent = new Intent(PlayEasy.this, ScoreActivity.class);
+                                intent.putExtras(b);
                                 startActivity(intent);
                                 setContentView(R.layout.activity_score_board);
                             }
