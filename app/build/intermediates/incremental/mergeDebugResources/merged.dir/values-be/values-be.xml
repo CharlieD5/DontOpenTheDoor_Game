@@ -24,7 +24,7 @@
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"Кнопка трансляцыі. Ідзе падключэнне"</string>
     <string msgid="816305490427819240" name="mr_cast_button_disconnected">"Кнопка трансляцыі. Адключана"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"Пошук прылад"</string>
-    <string msgid="414301941546135990" name="mr_chooser_title">"Трансляваць на"</string>
+    <string msgid="414301941546135990" name="mr_chooser_title">"Трансліраваць на"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"Вокладка альбома"</string>
     <string msgid="4868457957151124867" name="mr_controller_casting_screen">"Экран трансляцыі"</string>
     <string msgid="7333862312480583260" name="mr_controller_close_description">"Закрыць"</string>

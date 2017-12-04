@@ -24,7 +24,7 @@
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"ປຸ່ມສົ່ງສັນຍານ. ກຳລັງເຊື່ອມຕໍ່"</string>
     <string msgid="816305490427819240" name="mr_cast_button_disconnected">"ປຸ່ມສົ່ງສັນຍານ. ຕັດການເຊື່ອມຕໍ່ແລ້ວ"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"ກຳລັງ​ຊອກ​ຫາ​ອຸ​ປະ​ກອນ"</string>
-    <string msgid="414301941546135990" name="mr_chooser_title">"ຄາ​ສ​ທ໌​ຫາ"</string>
+    <string msgid="414301941546135990" name="mr_chooser_title">"ສົ່ງສັນຍານຫາ"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"ໜ້າປົກອະລະບໍ້າ"</string>
     <string msgid="4868457957151124867" name="mr_controller_casting_screen">"ການສົ່ງພາບໜ້າຈໍ"</string>
     <string msgid="7333862312480583260" name="mr_controller_close_description">"ປິດ"</string>

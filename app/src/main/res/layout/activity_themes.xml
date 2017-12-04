@@ -9,7 +9,7 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:background="?attr/backgroundColor"
-        tools:context="com.alexzh.multiplethemesapp.ThemesActivity">
+        tools:context="com.charlyan.dontopenthedoor.ThemesActivity">
 
     <TextView
         android:id="@+id/theme_label"

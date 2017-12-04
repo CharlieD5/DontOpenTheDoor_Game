@@ -9,7 +9,7 @@
               android:background="?attr/backgroundColor"
               android:orientation="vertical"
               android:layout_gravity="center|center"
-              tools:context="com.alexzh.multiplethemesapp.MainActivity">
+              tools:context="com.alexzh.multiplethemesapp.com.charlyan.dontopenthedoor.MainActivity">
 
     <TableRow
         android:layout_width="292dp"

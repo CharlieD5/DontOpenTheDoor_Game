@@ -23,8 +23,8 @@
     <string msgid="5088427771788648085" name="mr_cast_button_connected">"ខាសប៊ូតុង៖ បានភ្ជាប់ហើយ"</string>
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"ខាសប៊ូតុង៖ កំពុងភ្ជាប់"</string>
     <string msgid="816305490427819240" name="mr_cast_button_disconnected">"ខាសប៊ូតុង៖ បានកាត់ផ្តាច់"</string>
-    <string msgid="6349900579507521956" name="mr_chooser_searching">"ស្វែងរកឧបករណ៍"</string>
-    <string msgid="414301941546135990" name="mr_chooser_title">"ខាសទៅ"</string>
+    <string msgid="6349900579507521956" name="mr_chooser_searching">"កំពុងស្វែងរកឧបករណ៍"</string>
+    <string msgid="414301941546135990" name="mr_chooser_title">"បញ្ជូនទៅ"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"ស្នាដៃសិល្បៈអាល់ប៊ុម"</string>
     <string msgid="4868457957151124867" name="mr_controller_casting_screen">"កំពុងខាសអេក្រង់"</string>
     <string msgid="7333862312480583260" name="mr_controller_close_description">"បិទ"</string>

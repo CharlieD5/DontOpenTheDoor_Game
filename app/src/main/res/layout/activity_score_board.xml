@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:context="com.charlyan.dontopenthedoor.ScoreActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:dividerHeight="10dp"
+            android:foreground="@android:color/transparent"
+            android:paddingBottom="5dp">
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="CONTINUE"
+            android:textSize="18sp"
+            android:onClick="ContinueButtonClick"/>
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="SHARE"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</LinearLayout>

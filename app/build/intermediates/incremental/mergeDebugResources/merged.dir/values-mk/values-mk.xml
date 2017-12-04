@@ -21,7 +21,7 @@
     <string msgid="5088427771788648085" name="mr_cast_button_connected">"Копче за Cast. Поврзано"</string>
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"Копче за Cast. Се поврзува"</string>
     <string msgid="816305490427819240" name="mr_cast_button_disconnected">"Копче за Cast. Исклучено"</string>
-    <string msgid="6349900579507521956" name="mr_chooser_searching">"Наоѓање уреди"</string>
+    <string msgid="6349900579507521956" name="mr_chooser_searching">"Се бараат уреди"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"Емитувај на"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"Корица на албум"</string>
     <string msgid="4868457957151124867" name="mr_controller_casting_screen">"Екранот се емитува"</string>

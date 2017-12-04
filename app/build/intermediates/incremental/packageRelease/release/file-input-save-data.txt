@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Dec 01 22:29:23 PST 2017
+0.baseType=DIRECTORY
+0.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dex/release/0
+0.path=classes.dex
+0.set=DEX
+count=1

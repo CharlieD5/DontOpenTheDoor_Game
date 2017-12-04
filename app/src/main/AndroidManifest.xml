@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.alexzh.multiplethemesapp">
+    package="com.charlyan.dontopenthedoor">
 
     <application
         android:allowBackup="true"
@@ -9,28 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity">
+        <activity android:name="com.charlyan.dontopenthedoor.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ThemesActivity">
+        <activity android:name="com.charlyan.dontopenthedoor.ThemesActivity">
         </activity>
-        <activity android:name=".ShareActivity">
+        <activity android:name="com.charlyan.dontopenthedoor.ShareActivity">
         </activity>
-        <activity android:name=".Leaderboard">
+        <activity android:name="com.charlyan.dontopenthedoor.PlayHard">
         </activity>
-        <activity android:name=".LeaderBoardActivity">
+        <activity android:name="com.charlyan.dontopenthedoor.PlayEasy">
         </activity>
-        <activity android:name=".PlayHard">
+        <activity android:name="com.charlyan.dontopenthedoor.PlayMedium">
         </activity>
-        <activity android:name=".PlayEasy">
+        <activity android:name="com.charlyan.dontopenthedoor.DifficultyActivity">
         </activity>
-        <activity android:name=".PlayMedium">
-        </activity>
-        <activity android:name=".DifficultyActivity">
+        <activity android:name="com.charlyan.dontopenthedoor.ScoreActivity">
         </activity>
 
     </application>

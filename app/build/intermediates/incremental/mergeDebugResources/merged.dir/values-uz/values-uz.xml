@@ -37,7 +37,7 @@
     <string msgid="683634565969987458" name="mr_controller_play">"Boshlash"</string>
     <string msgid="735874641921425123" name="mr_controller_stop">"To‘xtatish"</string>
     <string msgid="8857886794086583226" name="mr_controller_stop_casting">"Translatsiyani to‘xtatish"</string>
-    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"Ovoz balandligi slayderi"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"Tovush balandligi slayderi"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"Tizim"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Qurilmalar"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Qidirish"</string>

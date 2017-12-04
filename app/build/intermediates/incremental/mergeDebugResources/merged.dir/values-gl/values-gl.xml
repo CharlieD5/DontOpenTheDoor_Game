@@ -15,7 +15,7 @@
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta de busca"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Buscar"</string>
     <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Enviar consulta"</string>
-    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Busca de voz"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Busca por voz"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Contraer"</string>
@@ -24,7 +24,7 @@
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"Botón de emitir. Conectando"</string>
     <string msgid="816305490427819240" name="mr_cast_button_disconnected">"Botón de emitir. Desconectado"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"Buscando dispositivos"</string>
-    <string msgid="414301941546135990" name="mr_chooser_title">"Emitir en"</string>
+    <string msgid="414301941546135990" name="mr_chooser_title">"Emitir a"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"Portada do álbum"</string>
     <string msgid="4868457957151124867" name="mr_controller_casting_screen">"Emisión de pantalla"</string>
     <string msgid="7333862312480583260" name="mr_controller_close_description">"Pechar"</string>
