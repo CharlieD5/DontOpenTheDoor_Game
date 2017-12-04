@@ -71,6 +71,10 @@ public class PlayEasy extends BaseActivity {
         a1.setVisibility(View.INVISIBLE);
         a2.setVisibility(View.INVISIBLE);
 
+        //Disables the doors so that cannot be clicked when game hasn't started
+        d1.setEnabled(false);
+        d2.setEnabled(false);
+
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
