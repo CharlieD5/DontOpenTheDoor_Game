@@ -72,10 +72,6 @@
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxxhdpi-v4/ic_group_expand_00.png"
     },
     {
-        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/layout_main_activity.xml.flat",
-        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-    },
-    {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_audiotrack_light.png.flat",
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-mdpi-v4/ic_audiotrack_light.png"
     },
@@ -864,6 +860,10 @@
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_winter_background2.jpg.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/winter_background2.jpg"
+    },
+    {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5eb71c250245f169442c2ef1de97c68a/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
@@ -1074,6 +1074,10 @@
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -1946,6 +1950,10 @@
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat",
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_spring_background2.jpg.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/spring_background2.jpg"
     },
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_ic_group_collapse_12.png.flat",
@@ -3038,6 +3046,10 @@
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_summer_background2.jpg.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/summer_background2.jpg"
     },
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connected_09_dark.png.flat",

@@ -154,35 +154,37 @@ public class PlayHard extends BaseActivity {
         if(score < 10 ){
             fps = 1000;
         }
-        else if(score >= 10 && score <20){
+        else if(score >= 10 && score < 20){
             fps = 950;
         }
-        else if(score >= 20 && score <30){
+        else if(score >= 20 && score < 30){
             fps = 900;
         }
-        else if(score >= 30 && score <40){
+        else if(score >= 30 && score < 40){
             fps = 850;
         }
-        else if(score >= 40 && score <50){
+        else if(score >= 40 && score < 50){
             fps = 800;
         }
-        else if(score >= 50 && score <60){
+        else if(score >= 50 && score < 60){
             fps = 750;
         }
-        else if(score >= 60 && score <70){
+        else if(score >= 60 && score < 70){
             fps = 700;
         }
-        else if(score >= 70 && score <80){
+        else if(score >= 70 && score < 80){
             fps = 650;
         }
-        else if(score >= 80 && score <90){
+        else if(score >= 80 && score < 90){
             fps = 600;
         }
-        else if(score >= 90 && score <100){
+        else if(score >= 90 && score < 100){
             fps = 550;
         }
-        else if(score >= 100){
+        else if(score >= 100 && score < 300){
             fps = 400;
+        } else if(score >= 300 && score < 1000) {
+            fps = 350;
         }
         an = (AnimationDrawable) ContextCompat.getDrawable(this, R.drawable.anim);
 

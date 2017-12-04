@@ -47,4 +47,10 @@ public class DifficultyActivity extends BaseActivity {
         startActivity(intent);
         setContentView(R.layout.activity_hard_gameplay);
     }
+
+    public void BackButtonClick(View view) {
+        Intent intent = new Intent(DifficultyActivity.this, MainActivity.class);
+        startActivity(intent);
+        setContentView(R.layout.activity_main);
+    }
 }

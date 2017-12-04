@@ -138,8 +138,10 @@ public class PlayEasy extends BaseActivity {
             fps = 600;
         } else if (score >= 90 && score < 100) {
             fps = 550;
-        } else if (score >= 100) {
+        } else if (score >= 100 && score < 300) {
             fps = 400;
+        } else if (score >= 300 && score < 600) {
+            fps = 350;
         }
         an = (AnimationDrawable) ContextCompat.getDrawable(this, R.drawable.anim);
 

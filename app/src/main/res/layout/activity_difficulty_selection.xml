@@ -40,4 +40,14 @@
         android:text="HARD"
         android:background="?attr/colorAccent"
         android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="BackButtonClick"
+        android:text="BACK"
+        android:background="?attr/colorPrimaryDark"
+        android:textSize="18sp"/>
 </LinearLayout>

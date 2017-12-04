@@ -19,7 +19,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.main_activity); // Home Screen
+        setContentView(R.layout.activity_main); // Home Screen
         Button play_button = (Button) findViewById(R.id.play_button);
         Button leaderboardButton = (Button)findViewById(R.id.leaderboard_button);
         Button theme_button = (Button) findViewById(R.id.theme_button);
