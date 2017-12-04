@@ -11,6 +11,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:id="@+id/medium_relative"
     tools:context="com.charlyan.dontopenthedoor.MainActivity">
 
     <ImageView

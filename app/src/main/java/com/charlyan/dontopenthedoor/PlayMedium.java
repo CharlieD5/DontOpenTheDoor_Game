@@ -72,6 +72,11 @@ public class PlayMedium extends BaseActivity {
         a2.setVisibility(View.INVISIBLE);
         a3.setVisibility(View.INVISIBLE);
 
+        //Disables the doors so that cannot be clicked when game hasn't started
+        d1.setEnabled(false);
+        d2.setEnabled(false);
+        d3.setEnabled(false);
+
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
