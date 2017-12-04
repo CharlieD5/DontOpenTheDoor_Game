@@ -95,7 +95,7 @@ public class PlayMedium extends BaseActivity {
             public void onClick(View view) {
                 templeft = 1;
                 d1.setImageResource(R.drawable.door1);
-                score=score + 5;
+                score=score + 3;
                 tv_score.setText("SCORE: " + score);
                 d1.setEnabled(false);
             }
@@ -105,7 +105,7 @@ public class PlayMedium extends BaseActivity {
             public void onClick(View view) {
                 templeft = 1;
                 d2.setImageResource(R.drawable.door1);
-                score=score + 5;
+                score=score + 3;
                 tv_score.setText("SCORE: " + score);
                 d2.setEnabled(false);
             }
@@ -116,7 +116,7 @@ public class PlayMedium extends BaseActivity {
             public void onClick(View view) {
                 templeft = 1;
                 d3.setImageResource(R.drawable.door1);
-                score=score+ 5;
+                score=score+ 3;
                 tv_score.setText("SCORE: " + score);
                 d3.setEnabled(false);
             }
