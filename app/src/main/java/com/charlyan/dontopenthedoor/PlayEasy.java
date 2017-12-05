@@ -269,4 +269,9 @@ public class PlayEasy extends BaseActivity {
             }
         }, fps);
     }
+    public void BackButtonClick(View view) {
+        Intent intent = new Intent(PlayEasy.this, DifficultyActivity.class);
+        startActivity(intent);
+        setContentView(R.layout.activity_difficulty_selection);
+    }
 }

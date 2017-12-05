@@ -90,11 +90,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/tv_score"
         android:background="?attr/colorPrimaryDark"
         android:text="START"
         android:textColor="@color/black_overlay"
-        />
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/tv_score"
@@ -104,6 +104,15 @@
         android:layout_centerHorizontal="true"
         android:text="SCORE: 0"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/tv_score"
+        android:background="?attr/colorPrimaryDark"
+        android:text="BACK"/>
 
 
 

@@ -369,5 +369,9 @@ public class PlayHard extends BaseActivity {
         }, fps);
 
     }
-
+    public void BackButtonClick(View view) {
+        Intent intent = new Intent(PlayHard.this, DifficultyActivity.class);
+        startActivity(intent);
+        setContentView(R.layout.activity_difficulty_selection);
+    }
 }

@@ -299,5 +299,10 @@ public class PlayMedium extends BaseActivity {
         }, fps);
 
     }
+    public void BackButtonClick(View view) {
+        Intent intent = new Intent(PlayMedium.this, DifficultyActivity.class);
+        startActivity(intent);
+        setContentView(R.layout.activity_difficulty_selection);
+    }
 
 }
