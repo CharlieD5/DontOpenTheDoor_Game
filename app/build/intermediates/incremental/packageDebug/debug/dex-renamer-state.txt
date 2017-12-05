@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 #Tue Dec 05 10:37:05 PST 2017
 base.0=/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/19
+=======
+#Mon Dec 04 15:51:12 PST 2017
+path.1=classes.dex
+>>>>>>> b7eab2f33ce625965dbf06e7997660e80da6e3c7
 path.0=classes.dex
 renamed.0=classes.dex
+<<<<<<< HEAD
+=======
+base.5=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/34
+base.4=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/32
+base.3=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/35
+base.2=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/33
+base.1=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/36
+base.0=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/31
+path.5=classes.dex
+path.4=classes.dex
+path.3=classes.dex
+path.2=classes.dex
+>>>>>>> b7eab2f33ce625965dbf06e7997660e80da6e3c7

@@ -15,28 +15,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.alexzh.multiplethemesapp.MainActivity" >
+        <activity android:name="com.charlyan.dontopenthedoor.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.alexzh.multiplethemesapp.ThemesActivity" >
+        <activity android:name="com.charlyan.dontopenthedoor.ThemesActivity" >
         </activity>
-        <activity android:name="com.alexzh.multiplethemesapp.ShareActivity" >
+        <activity android:name="com.charlyan.dontopenthedoor.ShareActivity" >
         </activity>
-        <activity android:name="com.alexzh.multiplethemesapp.Leaderboard" >
+        <activity android:name="com.charlyan.dontopenthedoor.PlayHard" >
         </activity>
-        <activity android:name="com.alexzh.multiplethemesapp.LeaderBoardActivity" >
+        <activity android:name="com.charlyan.dontopenthedoor.PlayEasy" >
         </activity>
-        <activity android:name="com.alexzh.multiplethemesapp.PlayHard" >
+        <activity android:name="com.charlyan.dontopenthedoor.PlayMedium" >
         </activity>
-        <activity android:name="com.alexzh.multiplethemesapp.PlayEasy" >
+        <activity android:name="com.charlyan.dontopenthedoor.DifficultyActivity" >
         </activity>
-        <activity android:name="com.alexzh.multiplethemesapp.PlayMedium" >
-        </activity>
-        <activity android:name="com.alexzh.multiplethemesapp.DifficultyActivity" >
+        <activity android:name="com.charlyan.dontopenthedoor.ScoreActivity" >
         </activity>
 
         <meta-data

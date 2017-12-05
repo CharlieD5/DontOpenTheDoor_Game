@@ -147,7 +147,7 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="colorAccent">#ed092d1a</color>
-    <color name="colorPrimary">#cc000000</color>
+    <color name="colorPrimary">#965b5959</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
@@ -867,21 +867,21 @@
         <item name="android:textColor">#ffffffff</item>
     </style>
     <style name="AppTheme.Spring" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="backgroundColor">@drawable/spring_background</item>
+        <item name="backgroundColor">@drawable/spring_background2</item>
         <item name="colorPrimary">@color/Spring_colorPrimary</item>
         <item name="colorPrimaryDark">@color/Spring_colorPrimaryDark</item>
         <item name="colorAccent">@color/Spring_colorAccent</item>
         <item name="android:textColor">#ffffffff</item>
     </style>
     <style name="AppTheme.Summer" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="backgroundColor">@drawable/summer_background</item>
+        <item name="backgroundColor">@drawable/summer_background2</item>
         <item name="colorPrimary">@color/Summer_colorPrimary</item>
         <item name="colorPrimaryDark">@color/Summer_colorPrimaryDark</item>
         <item name="colorAccent">@color/Summer_colorAccent</item>
         <item name="android:textColor">#030303</item>
     </style>
     <style name="AppTheme.Winter" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="backgroundColor">@drawable/winter_background</item>
+        <item name="backgroundColor">@drawable/winter_background2</item>
         <item name="colorPrimary">@color/Winter_colorPrimary</item>
         <item name="colorPrimaryDark">@color/Winter_colorPrimaryDark</item>
         <item name="colorAccent">@color/Winter_colorAccent</item>

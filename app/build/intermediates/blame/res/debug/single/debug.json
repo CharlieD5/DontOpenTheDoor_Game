@@ -3556,12 +3556,21 @@
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2fae5e36f043f0ee298d52d852870f9f/res/drawable-xhdpi-v4/design_ic_visibility_off.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_30_dark.png.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/res/drawable-xxhdpi-v4/ic_mr_button_connecting_30_dark.png"
     },
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_summer_background.jpg.flat",
         "source": "/Users/Charlie/DontOpenTheDoor_Game/app/src/main/res/drawable/summer_background.jpg"
+=======
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_retry.png.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable-xxhdpi/ic_retry.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_door4.jpg.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/door4.jpg"
+>>>>>>> b7eab2f33ce625965dbf06e7997660e80da6e3c7
     },
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -4208,8 +4217,21 @@
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8a9d69723081d84399b0542d3bb33b49/res/layout/notification_template_big_media_narrow.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/drawable-xhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+=======
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5eb71c250245f169442c2ef1de97c68a/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_retry.png.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable-hdpi/ic_retry.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+>>>>>>> b7eab2f33ce625965dbf06e7997660e80da6e3c7
     },
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -4820,8 +4842,13 @@
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxhdpi-v4/ic_vol_type_speaker_group_dark.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/drawable/abc_list_selector_holo_light.xml"
+=======
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_retry.png.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable-xhdpi/ic_retry.png"
+>>>>>>> b7eab2f33ce625965dbf06e7997660e80da6e3c7
     },
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -5396,8 +5423,13 @@
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxhdpi-v4/ic_mr_button_connecting_22_light.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_mr_button_connected_01_light.png.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/res/drawable-xhdpi-v4/ic_mr_button_connected_01_light.png"
+=======
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/raw_elevator_music.mp3.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/raw/elevator_music.mp3"
+>>>>>>> b7eab2f33ce625965dbf06e7997660e80da6e3c7
     },
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_mr_button_connected_06_dark.png.flat",
@@ -5514,6 +5546,10 @@
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/color-v11_abc_background_cache_hint_selector_material_light.xml.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_retry.png.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable-mdpi/ic_retry.png"
     },
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_mr_button_connected_11_dark.png.flat",
@@ -5776,8 +5812,17 @@
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/res/drawable-xhdpi-v4/ic_mr_button_connecting_08_dark.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_light.xml.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/color/abc_secondary_text_material_light.xml"
+=======
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/layout_popup.xml.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/popup.xml"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_arrow.png.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/arrow.png"
+>>>>>>> b7eab2f33ce625965dbf06e7997660e80da6e3c7
     },
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_ic_mr_button_disabled_dark.png.flat",
@@ -6244,12 +6289,37 @@
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxhdpi-v4/ic_mr_button_connecting_04_light.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/raw_scary.mp3.flat",
         "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/raw/scary.mp3"
     },
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/Users/Charlie/DontOpenTheDoor_Game/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+=======
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_28_light.png.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxhdpi-v4/ic_mr_button_connecting_28_light.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_13_light.png.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxhdpi-v4/ic_mr_button_connecting_13_light.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_ic_group_expand_05.png.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxxhdpi-v4/ic_group_expand_05.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_16_light.png.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxhdpi-v4/ic_mr_button_connecting_16_light.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi_flower2.png.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/generated/res/pngs/debug/drawable-xxhdpi/flower2.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+>>>>>>> b7eab2f33ce625965dbf06e7997660e80da6e3c7
     },
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_19_light.png.flat",
@@ -6772,8 +6842,33 @@
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5eb71c250245f169442c2ef1de97c68a/res/layout-v21/notification_template_custom_big.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_21_light.png.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/res/drawable-xxhdpi-v4/ic_mr_button_connecting_21_light.png"
+=======
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_clown.jpg.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/clown.jpg"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5eb71c250245f169442c2ef1de97c68a/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi_snowflake2.png.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/generated/res/pngs/debug/drawable-xhdpi/snowflake2.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connected_26_dark.png.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxhdpi-v4/ic_mr_button_connected_26_dark.png"
+    },
+    {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_14_light.png.flat",
+        "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-xxhdpi-v4/ic_mr_button_connecting_14_light.png"
+>>>>>>> b7eab2f33ce625965dbf06e7997660e80da6e3c7
     },
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",

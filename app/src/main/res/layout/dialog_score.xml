@@ -24,17 +24,38 @@
         android:textSize="30sp"
         android:text="Score: "/>
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/continue_leaderboard_button"
-        android:layout_width="54dp"
-        android:layout_height="42dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="30dp"
-        android:background="@android:drawable/ic_media_ff"
-        android:backgroundTint="?attr/colorPrimaryDark"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"/>
+        <ImageButton
+            android:id="@+id/replay_button"
+            android:layout_width="54dp"
+            android:layout_height="42dp"
+            android:layout_column="3"
+            android:layout_gravity="left|center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_row="0"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_retry"/>
+
+        <ImageButton
+            android:id="@+id/continue_leaderboard_button"
+            android:layout_width="54dp"
+            android:layout_height="42dp"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:drawable/ic_media_ff"
+            android:backgroundTint="?attr/colorPrimaryDark"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+
+    </GridLayout>
+
 
 </LinearLayout>

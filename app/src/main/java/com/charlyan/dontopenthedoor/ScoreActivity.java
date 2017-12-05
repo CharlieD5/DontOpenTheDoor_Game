@@ -74,6 +74,8 @@ public class ScoreActivity extends BaseActivity {
                 startActivity(Intent.createChooser(shareIntent, "Share via"));
             }
         });
+
+
     }
 
     public static void Sort () {
