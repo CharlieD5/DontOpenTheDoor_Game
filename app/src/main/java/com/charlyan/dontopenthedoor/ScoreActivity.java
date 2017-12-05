@@ -15,6 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -71,6 +73,8 @@ public class ScoreActivity extends BaseActivity {
                 startActivity(Intent.createChooser(shareIntent, "Share via"));
             }
         });
+
+
     }
 
     public void ContinueButtonClick(View view) {

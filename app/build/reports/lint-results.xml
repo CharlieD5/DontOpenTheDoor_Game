@@ -2,26 +2,6 @@
 <issues format="4" by="lint 3.0.1">
 
     <issue
-        id="CutPasteId"
-        severity="Warning"
-        message="The id `R.id.share_button` has already been looked up in this method; possible cut &amp; paste error?"
-        category="Correctness"
-        priority="6"
-        summary="Likely cut &amp; paste mistakes"
-        explanation="This lint check looks for cases where you have cut &amp; pasted calls to `findViewById` but have forgotten to update the R.id field. It&apos;s possible that your code is simply (redundantly) looking up the field repeatedly, but lint cannot distinguish that from a case where you for example want to initialize fields `prev` and `next` and you cut &amp; pasted `findViewById(R.id.prev)` and forgot to update the second initialization to `R.id.next`."
-        errorLine1="        bShare = (Button) findViewById(R.id.share_button);"
-        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/Leaderboard.java"
-            line="42"
-            column="27"/>
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/Leaderboard.java"
-            line="36"
-            column="40"/>
-    </issue>
-
-    <issue
         id="OldTargetApi"
         severity="Warning"
         message="Not targeting the latest versions of Android; compatibility &#xA;modes apply. Consider testing and updating this version. &#xA;Consult the android.os.Build.VERSION_CODES javadoc for details."
@@ -43,18 +23,18 @@
     <issue
         id="UnusedAttribute"
         severity="Warning"
-        message="Attribute `contextClickable` is only used in API level 23 and higher (current min is 19)"
+        message="Attribute `elevation` is only used in API level 21 and higher (current min is 19)"
         category="Correctness"
         priority="6"
         summary="Attribute unused on older versions"
         explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance or functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
-        errorLine1="    android:contextClickable=&quot;false&quot;>"
-        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        errorLine1="        android:elevation=&quot;5dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_leader_board.xml"
-            line="7"
-            column="5"/>
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="33"
+            column="9"/>
     </issue>
 
     <issue
@@ -109,23 +89,6 @@
     </issue>
 
     <issue
-        id="UnusedAttribute"
-        severity="Warning"
-        message="Attribute `elevation` is only used in API level 21 and higher (current min is 19)"
-        category="Correctness"
-        priority="6"
-        summary="Attribute unused on older versions"
-        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance or functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
-        errorLine1="        android:elevation=&quot;5dp&quot;"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="35"
-            column="9"/>
-    </issue>
-
-    <issue
         id="InflateParams"
         severity="Warning"
         message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
@@ -138,8 +101,8 @@
         errorLine1="                        View mView = getLayoutInflater().inflate(R.layout.dialog_new_high_score, null);"
         errorLine2="                                                                                                 ~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="186"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="200"
             column="98"/>
     </issue>
 
@@ -156,9 +119,27 @@
         errorLine1="                        View mView = getLayoutInflater().inflate(R.layout.dialog_score, null);"
         errorLine2="                                                                                        ~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="216"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="233"
             column="89"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="                    final ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);"
+        errorLine2="                                                                                                   ~~~~">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="274"
+            column="100"/>
     </issue>
 
     <issue
@@ -174,8 +155,8 @@
         errorLine1="                        View mView = getLayoutInflater().inflate(R.layout.dialog_new_high_score, null);"
         errorLine2="                                                                                                 ~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="244"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="295"
             column="98"/>
     </issue>
 
@@ -192,8 +173,8 @@
         errorLine1="                        View mView = getLayoutInflater().inflate(R.layout.dialog_score, null);"
         errorLine2="                                                                                        ~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="271"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="331"
             column="89"/>
     </issue>
 
@@ -210,8 +191,8 @@
         errorLine1="                        View mView = getLayoutInflater().inflate(R.layout.dialog_new_high_score, null);"
         errorLine2="                                                                                                 ~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="215"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="225"
             column="98"/>
     </issue>
 
@@ -228,81 +209,9 @@
         errorLine1="                        View mView = getLayoutInflater().inflate(R.layout.dialog_score, null);"
         errorLine2="                                                                                        ~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="242"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="261"
             column="89"/>
-    </issue>
-
-    <issue
-        id="VectorDrawableCompat"
-        severity="Error"
-        message="To use VectorDrawableCompat, you need to set `android.defaultConfig.vectorDrawables.useSupportLibrary = true`."
-        category="Correctness"
-        priority="5"
-        summary="Using VectorDrawableCompat"
-        explanation="To use VectorDrawableCompat, you need to make two modifications to your project. First, set `android.defaultConfig.vectorDrawables.useSupportLibrary = true` in your `build.gradle` file, and second, use `app:srcCompat` instead of `android:src` to refer to vector drawables."
-        url="http://chris.banes.me/2016/02/25/appcompat-vector/#enabling-the-flag"
-        urls="http://chris.banes.me/2016/02/25/appcompat-vector/#enabling-the-flag"
-        errorLine1="            app:srcCompat=&quot;@drawable/tree2&quot;/>"
-        errorLine2="            ~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_themes.xml"
-            line="47"
-            column="13"/>
-    </issue>
-
-    <issue
-        id="VectorDrawableCompat"
-        severity="Error"
-        message="To use VectorDrawableCompat, you need to set `android.defaultConfig.vectorDrawables.useSupportLibrary = true`."
-        category="Correctness"
-        priority="5"
-        summary="Using VectorDrawableCompat"
-        explanation="To use VectorDrawableCompat, you need to make two modifications to your project. First, set `android.defaultConfig.vectorDrawables.useSupportLibrary = true` in your `build.gradle` file, and second, use `app:srcCompat` instead of `android:src` to refer to vector drawables."
-        url="http://chris.banes.me/2016/02/25/appcompat-vector/#enabling-the-flag"
-        urls="http://chris.banes.me/2016/02/25/appcompat-vector/#enabling-the-flag"
-        errorLine1="            app:srcCompat=&quot;@drawable/snowflake2&quot;/>"
-        errorLine2="            ~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_themes.xml"
-            line="60"
-            column="13"/>
-    </issue>
-
-    <issue
-        id="VectorDrawableCompat"
-        severity="Error"
-        message="To use VectorDrawableCompat, you need to set `android.defaultConfig.vectorDrawables.useSupportLibrary = true`."
-        category="Correctness"
-        priority="5"
-        summary="Using VectorDrawableCompat"
-        explanation="To use VectorDrawableCompat, you need to make two modifications to your project. First, set `android.defaultConfig.vectorDrawables.useSupportLibrary = true` in your `build.gradle` file, and second, use `app:srcCompat` instead of `android:src` to refer to vector drawables."
-        url="http://chris.banes.me/2016/02/25/appcompat-vector/#enabling-the-flag"
-        urls="http://chris.banes.me/2016/02/25/appcompat-vector/#enabling-the-flag"
-        errorLine1="            app:srcCompat=&quot;@drawable/flower2&quot;/>"
-        errorLine2="            ~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_themes.xml"
-            line="99"
-            column="13"/>
-    </issue>
-
-    <issue
-        id="VectorDrawableCompat"
-        severity="Error"
-        message="To use VectorDrawableCompat, you need to set `android.defaultConfig.vectorDrawables.useSupportLibrary = true`."
-        category="Correctness"
-        priority="5"
-        summary="Using VectorDrawableCompat"
-        explanation="To use VectorDrawableCompat, you need to make two modifications to your project. First, set `android.defaultConfig.vectorDrawables.useSupportLibrary = true` in your `build.gradle` file, and second, use `app:srcCompat` instead of `android:src` to refer to vector drawables."
-        url="http://chris.banes.me/2016/02/25/appcompat-vector/#enabling-the-flag"
-        urls="http://chris.banes.me/2016/02/25/appcompat-vector/#enabling-the-flag"
-        errorLine1="            app:srcCompat=&quot;@drawable/sun2&quot;/>"
-        errorLine2="            ~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_themes.xml"
-            line="110"
-            column="13"/>
     </issue>
 
     <issue
@@ -318,7 +227,7 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build.gradle"
-            line="29"
+            line="30"
             column="5"/>
     </issue>
 
@@ -335,7 +244,7 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build.gradle"
-            line="31"
+            line="32"
             column="5"/>
     </issue>
 
@@ -352,7 +261,7 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build.gradle"
-            line="33"
+            line="34"
             column="5"/>
     </issue>
 
@@ -369,8 +278,46 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build.gradle"
-            line="34"
+            line="35"
             column="5"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="http://developer.android.com/training/multiscreen/screendensities.html"
+        urls="http://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="        android:textSize=&quot;25dp&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/list_row.xml"
+            line="19"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="http://developer.android.com/training/multiscreen/screendensities.html"
+        urls="http://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="        android:textSize=&quot;25dp&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/list_row.xml"
+            line="28"
+            column="9"/>
     </issue>
 
     <issue
@@ -393,22 +340,6 @@
     </issue>
 
     <issue
-        id="Recycle"
-        severity="Warning"
-        message="This `Cursor` should be freed up after use with `#close()`"
-        category="Performance"
-        priority="7"
-        summary="Missing `recycle()` calls"
-        explanation="Many resources, such as TypedArrays, VelocityTrackers, etc., should be recycled (with a `recycle()` call) after use. This lint check looks for missing `recycle()` calls."
-        errorLine1="        Cursor cursor = mDatabase.query("
-        errorLine2="                                  ~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/LeaderBoardLab.java"
-            line="96"
-            column="35"/>
-    </issue>
-
-    <issue
         id="ObsoleteLayoutParam"
         severity="Warning"
         message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
@@ -420,8 +351,8 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="50"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="48"
             column="9"/>
     </issue>
 
@@ -437,8 +368,8 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="62"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="60"
             column="9"/>
     </issue>
 
@@ -454,43 +385,27 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="76"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="74"
             column="9"/>
     </issue>
 
     <issue
-        id="StaticFieldLeak"
+        id="ViewHolder"
         severity="Warning"
-        message="Do not place Android context classes in static fields (static reference to `LeaderBoardLab` which has field `mContext` pointing to `Context`); this is a memory leak (and also breaks Instant Run)"
+        message="Unconditional layout inflation from view adapter: Should use View Holder pattern (use recycled view passed into this method as the second parameter) for smoother scrolling"
         category="Performance"
-        priority="6"
-        summary="Static Field Leaks"
-        explanation="A static field will leak contexts.&#xA;&#xA;Non-static inner classes have an implicit reference to their outer class. If that outer class is for example a `Fragment` or `Activity`, then this reference means that the long-running handler/loader/task will hold a reference to the activity which prevents it from getting garbage collected.&#xA;&#xA;Similarly, direct field references to activities and fragments from these longer running instances can cause leaks.&#xA;&#xA;ViewModel classes should never point to Views or non-application Contexts."
-        errorLine1="    private static LeaderBoardLab sLeaderBoardLab;"
-        errorLine2="            ~~~~~~">
+        priority="5"
+        summary="View Holder Candidates"
+        explanation="When implementing a view Adapter, you should avoid unconditionally inflating a new layout; if an available item is passed in for reuse, you should try to use that one instead. This helps make for example ListView scrolling much smoother."
+        url="http://developer.android.com/training/improving-layouts/smooth-scrolling.html#ViewHolder"
+        urls="http://developer.android.com/training/improving-layouts/smooth-scrolling.html#ViewHolder"
+        errorLine1="        convertView = LayoutInflater.from(getContext())"
+        errorLine2="                      ^">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/LeaderBoardLab.java"
-            line="23"
-            column="13"/>
-    </issue>
-
-    <issue
-        id="MergeRootFrame"
-        severity="Warning"
-        message="This `&lt;FrameLayout>` can be replaced with a `&lt;merge>` tag"
-        category="Performance"
-        priority="4"
-        summary="FrameLayout can be replaced with `&lt;merge>` tag"
-        explanation="If a `&lt;FrameLayout>` is the root of a layout and does not provide background or padding etc, it can often be replaced with a `&lt;merge>` tag which is slightly more efficient. Note that this depends on context, so make sure you understand how the `&lt;merge>` tag works before proceeding."
-        url="http://android-developers.blogspot.com/2009/03/android-layout-tricks-3-optimize-by.html"
-        urls="http://android-developers.blogspot.com/2009/03/android-layout-tricks-3-optimize-by.html"
-        errorLine1="&lt;FrameLayout"
-        errorLine2="^">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_leader_board.xml"
-            line="2"
-            column="1"/>
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/ScoreAdapter.java"
+            line="27"
+            column="23"/>
     </issue>
 
     <issue
@@ -552,7 +467,7 @@
         errorLine1="              android:background=&quot;?attr/backgroundColor&quot;"
         errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_leaderboard.xml"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
             line="7"
             column="15"/>
     </issue>
@@ -581,6 +496,22 @@
         priority="3"
         summary="Overdraw: Painting regions more than once"
         explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="              android:background=&quot;?attr/backgroundColor&quot;"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_score_board.xml"
+            line="9"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `?attr/backgroundColor` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
         errorLine1="        android:background=&quot;?attr/backgroundColor&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -597,45 +528,12 @@
         priority="3"
         summary="Overdraw: Painting regions more than once"
         explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
-        errorLine1="              android:background=&quot;?attr/backgroundColor&quot;"
-        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        errorLine1="    android:background=&quot;?attr/backgroundColor&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/fragment_leader_board.xml"
-            line="7"
-            column="15"/>
-    </issue>
-
-    <issue
-        id="Overdraw"
-        severity="Warning"
-        message="Possible overdraw: Root element paints background `?attr/backgroundColor` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
-        category="Performance"
-        priority="3"
-        summary="Overdraw: Painting regions more than once"
-        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
-        errorLine1="              android:background=&quot;?attr/backgroundColor&quot;"
-        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="9"
-            column="15"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Warning"
-        message="The resource `R.layout.activity_share` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;android.support.constraint.ConstraintLayout"
-        errorLine2="^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_share.xml"
-            line="2"
-            column="1"/>
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/popup.xml"
+            line="10"
+            column="5"/>
     </issue>
 
     <issue
@@ -668,7 +566,7 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/values/colors.xml"
-            line="15"
+            line="14"
             column="12"/>
     </issue>
 
@@ -685,7 +583,7 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/values/colors.xml"
-            line="21"
+            line="20"
             column="12"/>
     </issue>
 
@@ -702,7 +600,7 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/values/colors.xml"
-            line="27"
+            line="26"
             column="12"/>
     </issue>
 
@@ -719,7 +617,7 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/values/colors.xml"
-            line="33"
+            line="32"
             column="12"/>
     </issue>
 
@@ -795,6 +693,19 @@
     <issue
         id="UnusedResources"
         severity="Warning"
+        message="The resource `R.drawable.spring_background` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/spring_background.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
         message="The resource `R.string.app_name` appears to be unused"
         category="Performance"
         priority="3"
@@ -829,6 +740,19 @@
     <issue
         id="UnusedResources"
         severity="Warning"
+        message="The resource `R.drawable.summer_background` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/summer_background.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
         message="The resource `R.drawable.vibrate_off` appears to be unused"
         category="Performance"
         priority="3"
@@ -837,6 +761,19 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/vibrate_off.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.winter_background` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/winter_background.jpg"/>
     </issue>
 
     <issue
@@ -851,6 +788,20 @@
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/arrow.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/clown.jpg` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/clown.jpg"/>
     </issue>
 
     <issue
@@ -996,6 +947,20 @@
     <issue
         id="IconLocation"
         severity="Warning"
+        message="Found bitmap drawable `res/drawable/spring_background2.jpg` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/spring_background2.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
         message="Found bitmap drawable `res/drawable/summer_background.jpg` in densityless folder"
         category="Usability:Icons"
         priority="5"
@@ -1005,6 +970,20 @@
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/summer_background.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/summer_background2.jpg` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/summer_background2.jpg"/>
     </issue>
 
     <issue
@@ -1052,6 +1031,20 @@
     <issue
         id="IconLocation"
         severity="Warning"
+        message="Found bitmap drawable `res/drawable/winter_background2.jpg` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/winter_background2.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
         message="Found bitmap drawable `res/drawable/wood.png` in densityless folder"
         category="Usability:Icons"
         priority="5"
@@ -1083,20 +1076,19 @@
     </issue>
 
     <issue
-        id="ContentDescription"
+        id="ClickableViewAccessibility"
         severity="Warning"
-        message="Missing `contentDescription` attribute on image"
+        message="`onTouch` should call `View#performClick` when a click is detected"
         category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="    &lt;ImageView"
-        errorLine2="    ^"
-        quickfix="studio">
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="                        public boolean onTouch(View view, MotionEvent motionEvent){"
+        errorLine2="                                       ~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_easy_gameplay.xml"
-            line="16"
-            column="5"/>
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="282"
+            column="40"/>
     </issue>
 
     <issue
@@ -1112,57 +1104,6 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_easy_gameplay.xml"
-            line="25"
-            column="5"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageView"
-        errorLine2="        ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_easy_gameplay.xml"
-            line="43"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageView"
-        errorLine2="        ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_easy_gameplay.xml"
-            line="49"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="    &lt;ImageView"
-        errorLine2="    ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
             line="17"
             column="5"/>
     </issue>
@@ -1179,7 +1120,245 @@
         errorLine2="    ^"
         quickfix="studio">
         <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_easy_gameplay.xml"
+            line="26"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_easy_gameplay.xml"
+            line="44"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_easy_gameplay.xml"
+            line="50"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
+            line="18"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
+            line="27"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
+            line="36"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
+            line="45"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
+            line="62"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
+            line="68"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
+            line="74"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
+            line="80"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageButton"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="16"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageButton"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="21"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
+            line="17"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
             line="26"
             column="5"/>
     </issue>
@@ -1196,7 +1375,7 @@
         errorLine2="    ^"
         quickfix="studio">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
             line="35"
             column="5"/>
     </issue>
@@ -1209,148 +1388,12 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="    &lt;ImageView"
-        errorLine2="    ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
-            line="44"
-            column="5"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageView"
-        errorLine2="        ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
-            line="61"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageView"
-        errorLine2="        ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
-            line="67"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageView"
-        errorLine2="        ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
-            line="73"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageView"
-        errorLine2="        ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
-            line="79"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="    &lt;ImageView"
-        errorLine2="    ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
-            line="16"
-            column="5"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="    &lt;ImageView"
-        errorLine2="    ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
-            line="25"
-            column="5"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="    &lt;ImageView"
-        errorLine2="    ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
-            line="34"
-            column="5"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
         errorLine1="        &lt;ImageView"
         errorLine2="        ^"
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
-            line="52"
+            line="53"
             column="9"/>
     </issue>
 
@@ -1367,7 +1410,7 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
-            line="58"
+            line="59"
             column="9"/>
     </issue>
 
@@ -1384,7 +1427,7 @@
         quickfix="studio">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
-            line="64"
+            line="65"
             column="9"/>
     </issue>
 
@@ -1481,30 +1524,13 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageButton"
-        errorLine2="        ^"
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
         quickfix="studio">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="18"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="ContentDescription"
-        severity="Warning"
-        message="Missing `contentDescription` attribute on image"
-        category="Accessibility"
-        priority="3"
-        summary="Image without `contentDescription`"
-        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageButton"
-        errorLine2="        ^"
-        quickfix="studio">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="23"
-            column="9"/>
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/popup.xml"
+            line="19"
+            column="5"/>
     </issue>
 
     <issue
@@ -1520,8 +1546,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="71"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="83"
             column="34"/>
     </issue>
 
@@ -1538,8 +1564,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="71"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="83"
             column="34"/>
     </issue>
 
@@ -1556,8 +1582,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="90"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="102"
             column="34"/>
     </issue>
 
@@ -1574,8 +1600,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="90"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="102"
             column="34"/>
     </issue>
 
@@ -1592,8 +1618,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="100"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="112"
             column="34"/>
     </issue>
 
@@ -1610,8 +1636,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="100"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="112"
             column="34"/>
     </issue>
 
@@ -1628,8 +1654,8 @@
         errorLine1="                        newScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="190"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="205"
             column="42"/>
     </issue>
 
@@ -1646,8 +1672,8 @@
         errorLine1="                        newScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                         ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="190"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="205"
             column="42"/>
     </issue>
 
@@ -1664,8 +1690,8 @@
         errorLine1="                        finalScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                           ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="219"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="236"
             column="44"/>
     </issue>
 
@@ -1682,8 +1708,8 @@
         errorLine1="                        finalScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                           ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayEasy.java"
-            line="219"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayEasy.java"
+            line="236"
             column="44"/>
     </issue>
 
@@ -1700,8 +1726,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="86"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="113"
             column="34"/>
     </issue>
 
@@ -1718,8 +1744,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="86"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="113"
             column="34"/>
     </issue>
 
@@ -1736,8 +1762,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="105"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="132"
             column="34"/>
     </issue>
 
@@ -1754,8 +1780,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="105"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="132"
             column="34"/>
     </issue>
 
@@ -1772,8 +1798,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="115"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="142"
             column="34"/>
     </issue>
 
@@ -1790,8 +1816,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="115"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="142"
             column="34"/>
     </issue>
 
@@ -1808,8 +1834,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="126"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="153"
             column="34"/>
     </issue>
 
@@ -1826,8 +1852,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="126"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="153"
             column="34"/>
     </issue>
 
@@ -1844,8 +1870,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="136"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="163"
             column="34"/>
     </issue>
 
@@ -1862,8 +1888,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="136"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="163"
             column="34"/>
     </issue>
 
@@ -1880,8 +1906,8 @@
         errorLine1="                        newScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="248"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="300"
             column="42"/>
     </issue>
 
@@ -1898,8 +1924,8 @@
         errorLine1="                        newScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                         ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="248"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="300"
             column="42"/>
     </issue>
 
@@ -1916,8 +1942,8 @@
         errorLine1="                        finalScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                           ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="274"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="334"
             column="44"/>
     </issue>
 
@@ -1934,8 +1960,8 @@
         errorLine1="                        finalScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                           ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayHard.java"
-            line="274"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayHard.java"
+            line="334"
             column="44"/>
     </issue>
 
@@ -1952,8 +1978,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="77"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="85"
             column="34"/>
     </issue>
 
@@ -1970,8 +1996,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="77"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="85"
             column="34"/>
     </issue>
 
@@ -1988,8 +2014,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="96"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="104"
             column="34"/>
     </issue>
 
@@ -2006,8 +2032,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="96"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="104"
             column="34"/>
     </issue>
 
@@ -2024,8 +2050,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="106"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="114"
             column="34"/>
     </issue>
 
@@ -2042,8 +2068,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="106"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="114"
             column="34"/>
     </issue>
 
@@ -2060,8 +2086,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="117"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="125"
             column="34"/>
     </issue>
 
@@ -2078,8 +2104,8 @@
         errorLine1="                tv_score.setText(&quot;SCORE: &quot; + score);"
         errorLine2="                                 ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="117"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="125"
             column="34"/>
     </issue>
 
@@ -2096,8 +2122,8 @@
         errorLine1="                        newScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="219"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="230"
             column="42"/>
     </issue>
 
@@ -2114,8 +2140,8 @@
         errorLine1="                        newScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                         ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="219"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="230"
             column="42"/>
     </issue>
 
@@ -2132,8 +2158,8 @@
         errorLine1="                        finalScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                           ~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="245"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="264"
             column="44"/>
     </issue>
 
@@ -2150,8 +2176,8 @@
         errorLine1="                        finalScore.setText(&quot;Score: &quot; + score);"
         errorLine2="                                           ~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/alexzh/multiplethemesapp/PlayMedium.java"
-            line="245"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/java/com/charlyan/dontopenthedoor/PlayMedium.java"
+            line="264"
             column="44"/>
     </issue>
 
@@ -2206,6 +2232,22 @@
     <issue
         id="HardcodedText"
         severity="Warning"
+        message="Hardcoded string &quot;BACK&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;BACK&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_difficulty_selection.xml"
+            line="50"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
         message="Hardcoded string &quot;START&quot;, should use `@string` resource"
         category="Internationalization"
         priority="5"
@@ -2215,7 +2257,7 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_easy_gameplay.xml"
-            line="65"
+            line="66"
             column="9"/>
     </issue>
 
@@ -2231,7 +2273,7 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_easy_gameplay.xml"
-            line="75"
+            line="76"
             column="9"/>
     </issue>
 
@@ -2247,7 +2289,7 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
-            line="94"
+            line="95"
             column="9"/>
     </issue>
 
@@ -2263,23 +2305,119 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_hard_gameplay.xml"
-            line="104"
+            line="105"
             column="9"/>
     </issue>
 
     <issue
         id="HardcodedText"
         severity="Warning"
-        message="Hardcoded string &quot;CONTINUE&quot;, should use `@string` resource"
+        message="Hardcoded string &quot;DON&apos;T OPEN THE DOOR&quot;, should use `@string` resource"
         category="Internationalization"
         priority="5"
         summary="Hardcoded text"
         explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;CONTINUE&quot;"
-        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        errorLine1="        android:text=&quot;DON&apos;T OPEN THE DOOR&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_leaderboard.xml"
-            line="41"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="36"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;PLAY&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;PLAY&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="53"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;HIGH SCORES&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;HIGH SCORES&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="66"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;ACHIEVEMENTS&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;ACHIEVEMENTS&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_main.xml"
+            line="81"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;START&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;START&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
+            line="81"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;SCORE: 0&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;SCORE: 0&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
+            line="91"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;MAIN MENU&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;MAIN MENU&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_score_board.xml"
+            line="48"
             column="13"/>
     </issue>
 
@@ -2294,41 +2432,9 @@
         errorLine1="            android:text=&quot;SHARE&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_leaderboard.xml"
-            line="53"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_score_board.xml"
+            line="60"
             column="13"/>
-    </issue>
-
-    <issue
-        id="HardcodedText"
-        severity="Warning"
-        message="Hardcoded string &quot;START&quot;, should use `@string` resource"
-        category="Internationalization"
-        priority="5"
-        summary="Hardcoded text"
-        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;START&quot;"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
-            line="80"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="HardcodedText"
-        severity="Warning"
-        message="Hardcoded string &quot;SCORE: 0&quot;, should use `@string` resource"
-        category="Internationalization"
-        priority="5"
-        summary="Hardcoded text"
-        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;SCORE: 0&quot;"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_medium_gameplay.xml"
-            line="90"
-            column="9"/>
     </issue>
 
     <issue
@@ -2430,12 +2536,12 @@
     <issue
         id="HardcodedText"
         severity="Warning"
-        message="Hardcoded string &quot;EXIT&quot;, should use `@string` resource"
+        message="Hardcoded string &quot;BACK&quot;, should use `@string` resource"
         category="Internationalization"
         priority="5"
         summary="Hardcoded text"
         explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;EXIT&quot;/>"
+        errorLine1="            android:text=&quot;BACK&quot;/>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/activity_themes.xml"
@@ -2540,114 +2646,66 @@
     </issue>
 
     <issue
-        id="HardcodedText"
+        id="RelativeOverlap"
         severity="Warning"
-        message="Hardcoded string &quot;CONTINUE&quot;, should use `@string` resource"
+        message="`@id/score` can overlap `@id/name` if @id/name, @id/score grow due to localized text expansion"
         category="Internationalization"
-        priority="5"
-        summary="Hardcoded text"
-        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;CONTINUE&quot;"
-        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        priority="3"
+        summary="Overlapping items in RelativeLayout"
+        explanation="If relative layout has text or button items aligned to left and right sides they can overlap each other due to localized text expansion unless they have mutual constraints like `toEndOf`/`toStartOf`."
+        errorLine1="    &lt;TextView"
+        errorLine2="    ^">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/fragment_leader_board.xml"
-            line="39"
-            column="13"/>
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/list_row.xml"
+            line="21"
+            column="5"/>
     </issue>
 
     <issue
-        id="HardcodedText"
+        id="RtlHardcoded"
         severity="Warning"
-        message="Hardcoded string &quot;SHARE&quot;, should use `@string` resource"
-        category="Internationalization"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
         priority="5"
-        summary="Hardcoded text"
-        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;SHARE&quot;"
-        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="        android:layout_alignParentLeft=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/fragment_leader_board.xml"
-            line="50"
-            column="13"/>
-    </issue>
-
-    <issue
-        id="HardcodedText"
-        severity="Warning"
-        message="Hardcoded string &quot;Hello blank fragment&quot;, should use `@string` resource"
-        category="Internationalization"
-        priority="5"
-        summary="Hardcoded text"
-        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;Hello blank fragment&quot;/>"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/fragment_scare.xml"
-            line="11"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/list_row.xml"
+            line="17"
             column="9"/>
     </issue>
 
     <issue
-        id="HardcodedText"
+        id="RtlHardcoded"
         severity="Warning"
-        message="Hardcoded string &quot;DON&apos;T OPEN THE DOOR&quot;, should use `@string` resource"
-        category="Internationalization"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
         priority="5"
-        summary="Hardcoded text"
-        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;DON&apos;T OPEN THE DOOR&quot;"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~">
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="        android:layout_alignParentRight=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="38"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/list_row.xml"
+            line="25"
             column="9"/>
     </issue>
 
     <issue
-        id="HardcodedText"
+        id="RtlHardcoded"
         severity="Warning"
-        message="Hardcoded string &quot;PLAY&quot;, should use `@string` resource"
-        category="Internationalization"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;8dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
         priority="5"
-        summary="Hardcoded text"
-        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;PLAY&quot;"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="55"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="HardcodedText"
-        severity="Warning"
-        message="Hardcoded string &quot;HIGH SCORES&quot;, should use `@string` resource"
-        category="Internationalization"
-        priority="5"
-        summary="Hardcoded text"
-        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;HIGH SCORES&quot;"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="        android:layout_marginRight=&quot;8dp&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="68"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="HardcodedText"
-        severity="Warning"
-        message="Hardcoded string &quot;ACHIEVEMENTS&quot;, should use `@string` resource"
-        category="Internationalization"
-        priority="5"
-        summary="Hardcoded text"
-        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;ACHIEVEMENTS&quot;"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/main_activity.xml"
-            line="83"
+            file="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout/list_row.xml"
+            line="26"
             column="9"/>
     </issue>
 

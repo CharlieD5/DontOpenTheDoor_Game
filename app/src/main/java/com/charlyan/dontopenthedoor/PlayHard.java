@@ -330,6 +330,7 @@ public class PlayHard extends BaseActivity {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
                         View mView = getLayoutInflater().inflate(R.layout.dialog_score, null);
                         ImageButton mContinue = (ImageButton) mView.findViewById(R.id.continue_leaderboard_button);
+                        ImageButton mReplay = mView.findViewById(R.id.replay_button);
                         TextView finalScore = (TextView) mView.findViewById(R.id.score_label);
                         finalScore.setText("Score: " + score);
                         mContinue.setOnClickListener(new View.OnClickListener() {
@@ -342,6 +343,15 @@ public class PlayHard extends BaseActivity {
                                 intent.putExtras(b);
                                 startActivity(intent);
                                 setContentView(R.layout.activity_score_board);
+                            }
+                        });
+
+                        mReplay.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent = new Intent(PlayHard.this, PlayHard.class);
+                                startActivity(intent);
+                                setContentView(R.layout.activity_hard_gameplay);
                             }
                         });
 
