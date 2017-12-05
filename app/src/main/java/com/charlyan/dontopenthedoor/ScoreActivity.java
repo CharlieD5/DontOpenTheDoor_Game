@@ -78,9 +78,11 @@ public class ScoreActivity extends BaseActivity {
 
     }
 
-    public static void Sort () {
-
-    }
+//    public static void Sort () {
+//        DBAdapter db = new DBAdapter(this);
+//        db.open();
+//        db.getAllScores();
+//    }
 
     public void ContinueButtonClick(View view) {
         Intent intent = new Intent(ScoreActivity.this, MainActivity.class);
