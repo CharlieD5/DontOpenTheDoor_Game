@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -108,6 +110,12 @@ public class DBAdapter {
                 scoresList.add(singleScore);
             } while (cursor.moveToNext());
         }
+        Collections.sort(scoresList, new Comparator<Scores>() {
+            @Override
+            public int compare(Scores o1, Scores o2) {
+                return Integer.parseInt(o2.getScore()) - Integer.parseInt(o1.getScore());
+            }
+        });
         return scoresList;
     }
 }

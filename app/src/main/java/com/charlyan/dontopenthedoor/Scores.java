@@ -1,6 +1,6 @@
 package com.charlyan.dontopenthedoor;
 
-public class Scores {
+public class Scores{
     private String mName;
     private String mScore;
 
