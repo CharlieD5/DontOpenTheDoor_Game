@@ -33,4 +33,5 @@ public class ScoreAdapter extends ArrayAdapter<Scores> {
         scoreView.setText(record.getScore());
         return convertView;
     }
+   // public static
 }

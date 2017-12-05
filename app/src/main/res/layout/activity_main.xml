@@ -10,7 +10,7 @@
               tools:context="com.charlyan.dontopenthedoor.MainActivity">
 
     <TableRow
-        android:layout_width="292dp"
+        android:layout_width="match_parent"
         android:layout_height="71dp">
 
         <ImageButton
@@ -23,6 +23,21 @@
             android:layout_width="60dp"
             android:layout_height="50dp"
             android:background="@drawable/vibrate_on"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageButton
+                android:id="@+id/info_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="@drawable/info"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="?attr/colorPrimaryDark"/>
+        </FrameLayout>
 
     </TableRow>
 

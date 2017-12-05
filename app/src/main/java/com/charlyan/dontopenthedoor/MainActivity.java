@@ -29,18 +29,23 @@ public class MainActivity extends BaseActivity {
         theme_button = findViewById(R.id.theme_button);
         final ImageButton sound_button = findViewById(R.id.sound_button);
         final ImageButton vibrate_button = findViewById(R.id.vibrate_button);
+        final ImageButton info_button = findViewById(R.id.info_button);
 
         // Alert Dialog greeting that suggests user to use headphones
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("Note:")
-                        .setMessage("Plugging in headphones can enhance the game play experience!");
-                AlertDialog alertdialog = builder.create();
-                alertdialog.show();
+        info_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this)
+                                .setCancelable(true)
+                                .setMessage("NOTE: Plugging in headphones can enhance the game play experience!");
+                        AlertDialog alertdialog = builder.create();
+                        alertdialog.show();
+                    }
+                }, 400);
             }
-        }, 2000);
+        });
 
         //Adds Background Music
         final MediaPlayer player = MediaPlayer.create(this, R.raw.elevator_music);
@@ -98,6 +103,7 @@ public class MainActivity extends BaseActivity {
     public void LeaderboardButtonClick(View view) {
         Intent intent = new Intent(MainActivity.this, ScoreActivity.class);
         startActivity(intent);
+
     }
 
     public void ThemeButtonClick(View view) {

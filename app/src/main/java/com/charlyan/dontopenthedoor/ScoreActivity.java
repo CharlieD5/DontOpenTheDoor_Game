@@ -2,18 +2,10 @@ package com.charlyan.dontopenthedoor;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 
 import java.util.List;
 
@@ -58,6 +50,17 @@ public class ScoreActivity extends BaseActivity {
             mListView.setAdapter(adapter);
 
             db.close();
+        } else {
+            db = new DBAdapter(this);
+
+            db.open();
+
+            List<Scores> scoresList = db.getListOfScores();
+
+            // Initialize and create a new adapter with layout named list found in activity_main layout
+            mListView = (ListView) findViewById(R.id.list);
+            ArrayAdapter<Scores> adapter = new ScoreAdapter(this, scoresList);
+            mListView.setAdapter(adapter);
         }
 
         bShare = (Button) findViewById(R.id.share_button);
@@ -71,6 +74,10 @@ public class ScoreActivity extends BaseActivity {
                 startActivity(Intent.createChooser(shareIntent, "Share via"));
             }
         });
+    }
+
+    public static void Sort () {
+
     }
 
     public void ContinueButtonClick(View view) {
