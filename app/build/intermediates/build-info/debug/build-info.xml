@@ -2,34 +2,30 @@
 <instant-run
     abi="x86"
     api-level="27"
-    build-mode="COLD"
+    build-mode="HOT_WARM"
     density="xxhdpi"
     format="10"
-    ir-eligibility="METHOD_ADDED"
     plugin-version="3.0.1"
-    timestamp="1512503336500"
+    timestamp="1512512967582"
     token="-2405949730326534193"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="319" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="32" />
+        duration="0" />
     <task
         name="verifier"
-        duration="7" />
+        duration="0" />
 
     <artifact
-        location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/outputs/apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
         build-mode="FULL"
@@ -74,15 +70,43 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="METHOD_ADDED"
-        timestamp="1512503336500"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1512512828469"
+        verifier="MANIFEST_FILE_CHANGE" >
+        <artifact
+            location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/outputs/apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512512967582"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

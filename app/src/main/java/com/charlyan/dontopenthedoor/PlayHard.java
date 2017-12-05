@@ -36,11 +36,10 @@ import static com.charlyan.dontopenthedoor.ScoreActivity.SCORE_KEY;
  * score.
  */
 public class PlayHard extends BaseActivity {
-
     ImageView d1, d2, d3, d4;
     ImageView a1, a2, a3, a4;
     TextView tv_score;
-    Button start_button;
+    Button start_button, back_button;
     Random r;
     int score =0, fps = 1000;
     int which = 0, whichsave = 0;
@@ -68,16 +67,17 @@ public class PlayHard extends BaseActivity {
 
         r = new Random();
 
-        start_button = (Button) findViewById(R.id.start_button);
-        tv_score = (TextView) findViewById(R.id.tv_score);
-        d1 = (ImageView) findViewById(R.id.d1);
-        d2 = (ImageView) findViewById(R.id.d2);
-        d3 = (ImageView) findViewById(R.id.d3);
-        d4 = (ImageView) findViewById(R.id.d4);
-        a1 = (ImageView) findViewById(R.id.a1);
-        a2 = (ImageView) findViewById(R.id.a2);
-        a3 = (ImageView) findViewById(R.id.a3);
-        a4 = (ImageView) findViewById(R.id.a4);
+        start_button = findViewById(R.id.start_button);
+        back_button = findViewById(R.id.back_button);
+        tv_score = findViewById(R.id.tv_score);
+        d1 = findViewById(R.id.d1);
+        d2 = findViewById(R.id.d2);
+        d3 = findViewById(R.id.d3);
+        d4 = findViewById(R.id.d4);
+        a1 = findViewById(R.id.a1);
+        a2 = findViewById(R.id.a2);
+        a3 = findViewById(R.id.a3);
+        a4 = findViewById(R.id.a4);
 
         d1.setVisibility(View.VISIBLE);
         d2.setVisibility(View.VISIBLE);
@@ -95,7 +95,7 @@ public class PlayHard extends BaseActivity {
         d4.setEnabled(false);
 
         //Creates the relative Layout to host the pop-up window
-        relativeLayout = (RelativeLayout) findViewById(R.id.hard_relative);
+        relativeLayout = findViewById(R.id.hard_relative);
 
         //Creates handler to close pop-up window and implements the delay
         mRunnable = new Runnable() {
@@ -120,6 +120,8 @@ public class PlayHard extends BaseActivity {
                 }, 1000);
                 start_button.setEnabled(false);
                 start_button.setVisibility(View.INVISIBLE);
+                back_button.setEnabled(false);
+                back_button.setVisibility(View.INVISIBLE);
             }
         });
 

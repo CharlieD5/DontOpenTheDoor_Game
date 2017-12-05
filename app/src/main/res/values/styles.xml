@@ -1,7 +1,9 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -17,6 +19,8 @@
     <!-- Fall Theme -->
 
     <style name="AppTheme.Fall" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="backgroundColor">@drawable/fall_background</item>
         <item name="colorPrimary">@color/Fall_colorPrimary</item>
         <item name="colorPrimaryDark">@color/Fall_colorPrimaryDark</item>
@@ -27,6 +31,8 @@
     <!-- Winter Theme -->
 
     <style name="AppTheme.Winter" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="backgroundColor">@drawable/winter_background2</item>
         <item name="colorPrimary">@color/Winter_colorPrimary</item>
         <item name="colorPrimaryDark">@color/Winter_colorPrimaryDark</item>
@@ -37,6 +43,8 @@
     <!-- Spring Theme -->
 
     <style name="AppTheme.Spring" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="backgroundColor">@drawable/spring_background2</item>
         <item name="colorPrimary">@color/Spring_colorPrimary</item>
         <item name="colorPrimaryDark">@color/Spring_colorPrimaryDark</item>
@@ -47,6 +55,8 @@
     <!-- Summer Theme -->
 
     <style name="AppTheme.Summer" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="backgroundColor">@drawable/summer_background2</item>
         <item name="colorPrimary">@color/Summer_colorPrimary</item>
         <item name="colorPrimaryDark">@color/Summer_colorPrimaryDark</item>

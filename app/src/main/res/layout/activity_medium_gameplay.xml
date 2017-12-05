@@ -98,7 +98,8 @@
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/tv_score"
         android:background="?attr/colorPrimaryDark"
-        android:text="BACK"/>
+        android:text="BACK"
+        android:textColor="@color/black_overlay"/>
 
 
 

@@ -31,12 +31,10 @@ import static com.charlyan.dontopenthedoor.ScoreActivity.SCORE_KEY;
  */
 
 public class PlayEasy extends BaseActivity {
-    DBAdapter db = new DBAdapter(this);
-    private Scores s;
     ImageView d1, d2;
     ImageView a1, a2;
     TextView tv_score;
-    Button start_button;
+    Button start_button, back_button;
     Random r;
     int score = 0, fps = 1000;
     int which = 0, whichsave = 0;
@@ -54,11 +52,10 @@ public class PlayEasy extends BaseActivity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_easy_gameplay);
 
-        s = new Scores();
-
         r = new Random();
 
         start_button = (Button) findViewById(R.id.start_button);
+        back_button = findViewById(R.id.back_button);
         tv_score = (TextView) findViewById(R.id.tv_score);
         d1 = (ImageView) findViewById(R.id.d1);
         d2 = (ImageView) findViewById(R.id.d2);
@@ -89,8 +86,25 @@ public class PlayEasy extends BaseActivity {
                 }, 1000);
                 start_button.setEnabled(false);
                 start_button.setVisibility(View.INVISIBLE);
+                back_button.setEnabled(false);
+                back_button.setVisibility(View.INVISIBLE);
             }
         });
+
+//        back_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Handler handler = new Handler();
+//                handler.postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        theGameActions();
+//                    }
+//                }, 1000);
+//                back_button.setEnabled(false);
+//                back_button.setVisibility(View.INVISIBLE);
+//            }
+//        });
 
         d1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -188,9 +202,6 @@ public class PlayEasy extends BaseActivity {
                 }
 
                 if (left == 0) {
-
-                    db.open();
-                    Cursor players = db.getAllScores();
 
                     // Vibrate for 500 milliseconds
                     //   v.vibrate(1000);
