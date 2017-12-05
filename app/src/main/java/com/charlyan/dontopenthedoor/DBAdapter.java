@@ -116,6 +116,17 @@ public class DBAdapter {
                 return Integer.parseInt(o2.getScore()) - Integer.parseInt(o1.getScore());
             }
         });
+
+        if (scoresList.size() > 3) {
+            do {
+                int i = 1;
+                scoresList.remove(scoresList.size() - i);
+                i++;
+            } while (scoresList.size() != 3);
+            return scoresList;
+        } else if (scoresList.size() < 4) {
+            return scoresList;
+        }
         return scoresList;
     }
 }
