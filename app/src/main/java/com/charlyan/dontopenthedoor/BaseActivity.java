@@ -20,7 +20,7 @@ public class BaseActivity extends AppCompatActivity {
     }
     public void updateTheme() {
         if (Utility.getTheme(getApplicationContext()) <= THEME_ORIGINAL) {
-            setTheme(R.style.AppTheme);
+            setTheme(R.style.AppTheme_NoActionBar);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             }

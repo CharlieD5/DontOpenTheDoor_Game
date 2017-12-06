@@ -36,7 +36,7 @@ public class PlayMedium extends BaseActivity {
     ImageView d1, d2, d3;
     ImageView a1, a2, a3;
     TextView tv_score;
-    Button start_button;
+    Button start_button, back_button;
     Random r;
     int score =0, fps = 1000;
     int which = 0, whichsave = 0;
@@ -57,14 +57,15 @@ public class PlayMedium extends BaseActivity {
 
         r = new Random();
 
-        start_button = (Button) findViewById(R.id.start_button);
-        tv_score = (TextView) findViewById(R.id.tv_score);
-        d1 = (ImageView) findViewById(R.id.d1);
-        d2 = (ImageView) findViewById(R.id.d2);
-        d3 = (ImageView) findViewById(R.id.d3);
-        a1 = (ImageView) findViewById(R.id.a1);
-        a2 = (ImageView) findViewById(R.id.a2);
-        a3 = (ImageView) findViewById(R.id.a3);
+        start_button = findViewById(R.id.start_button);
+        back_button = findViewById(R.id.back_button);
+        tv_score = findViewById(R.id.tv_score);
+        d1 = findViewById(R.id.d1);
+        d2 = findViewById(R.id.d2);
+        d3 = findViewById(R.id.d3);
+        a1 = findViewById(R.id.a1);
+        a2 = findViewById(R.id.a2);
+        a3 = findViewById(R.id.a3);
 
         d1.setVisibility(View.VISIBLE);
         d2.setVisibility(View.VISIBLE);
@@ -93,6 +94,8 @@ public class PlayMedium extends BaseActivity {
                 }, 1000);
                 start_button.setEnabled(false);
                 start_button.setVisibility(View.INVISIBLE);
+                back_button.setEnabled(false);
+                back_button.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -303,6 +306,11 @@ public class PlayMedium extends BaseActivity {
             }
         }, fps);
 
+    }
+    public void BackButtonClick(View view) {
+        Intent intent = new Intent(PlayMedium.this, DifficultyActivity.class);
+        startActivity(intent);
+        setContentView(R.layout.activity_difficulty_selection);
     }
 
 }
