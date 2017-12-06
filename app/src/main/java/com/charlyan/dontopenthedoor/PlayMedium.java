@@ -355,7 +355,9 @@ public class PlayMedium extends BaseActivity {
                         dialog.show();
                     }
 
+                    db.close();
                     start_button.setVisibility(View.VISIBLE);
+                    back_button.setVisibility(View.VISIBLE);
 
                 } else if(left > 0){
                     theGameActions();

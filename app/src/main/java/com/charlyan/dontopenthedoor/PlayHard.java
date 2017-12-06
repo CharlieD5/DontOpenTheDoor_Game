@@ -281,30 +281,37 @@ public class PlayHard extends BaseActivity {
                 }
 
                 if(left== 0){
-
-                    //Creates Pop-Up window once attempts are depleted
-//                    layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
-//                    ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
-//                    popupWindow = new PopupWindow(container, 800, 800, true);
-//                    popupWindow.showAtLocation(relativeLayout, Gravity.NO_GRAVITY, 500, 500);
-//
-//                    //Makes on click listener to stop pop-up window once user clicks outside of popup
-//                    container.setOnTouchListener(new View.OnTouchListener(){
-//                        @Override
-//                        public boolean onTouch(View view, MotionEvent motionEvent){
-//                            popupWindow.dismiss();
-//                            return true;
-//
-//                           // container.setVisibility(View.VISIBLE);
-//                           // mHandler.removeCallbacks(mRunnable);
-//                           // mHandler.postDelayed(mRunnable, 10000);
-//                        }
-//                    });
-
                     db.open();
+                    int thirdScore;
                     List<Scores> scoresList = db.getListOfScores();
-                    Scores oldScore = scoresList.get(scoresList.size() - 1);
-                    int thirdScore = Integer.parseInt(oldScore.getScore());
+                    if (scoresList.size() == 0){
+                        Bundle b = new Bundle();
+                        b.putString(NAME_KEY, "Player");
+                        b.putInt(SCORE_KEY, 0);
+                        Bundle b1 = new Bundle();
+                        b1.putString(NAME_KEY, "Player");
+                        b1.putInt(SCORE_KEY, 0);
+                        Bundle b2 = new Bundle();
+                        b2.putString(NAME_KEY, "Player");
+                        b2.putInt(SCORE_KEY, 0);
+                        thirdScore = 0;
+                    } else if (scoresList.size() == 1) {
+                        Bundle b = new Bundle();
+                        b.putString(NAME_KEY, "Player");
+                        b.putInt(SCORE_KEY, 0);
+                        Bundle b1 = new Bundle();
+                        b1.putString(NAME_KEY, "Player");
+                        b1.putInt(SCORE_KEY, 0);
+                        thirdScore = 0;
+                    } else if (scoresList.size() == 2) {
+                        Bundle b = new Bundle();
+                        b.putString(NAME_KEY, "Player");
+                        b.putInt(SCORE_KEY, 0);
+                        thirdScore = 0;
+                    }else{
+                        Scores oldScore = scoresList.get(scoresList.size() - 1);
+                        thirdScore = Integer.parseInt(oldScore.getScore());
+                    }
 
                     if (score > thirdScore) {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
@@ -376,7 +383,9 @@ public class PlayHard extends BaseActivity {
                         dialog.show();
                     }
 
+                    db.close();
                     start_button.setVisibility(View.VISIBLE);
+                    back_button.setVisibility(View.VISIBLE);
 
                 } else if(left > 0){
                     theGameActions();

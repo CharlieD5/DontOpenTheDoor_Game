@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Dec 05 23:21:53 PST 2017
+#Tue Dec 05 23:42:01 PST 2017
 2.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/17
 5.set=DEX
 0.path=classes.dex
