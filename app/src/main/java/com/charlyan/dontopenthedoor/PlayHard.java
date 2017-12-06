@@ -48,6 +48,11 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
+
+    Button bShare;
+    Intent shareIntent;
+
+
     //Pop-up Window Variables
     private PopupWindow popupWindow;
     private LayoutInflater layoutInflater;
@@ -304,9 +309,36 @@ public class PlayHard extends BaseActivity {
                     );
 
                     db.open();
+                    int thirdScore;
                     List<Scores> scoresList = db.getListOfScores();
-                    Scores oldScore = scoresList.get(scoresList.size() - 1);
-                    int thirdScore = Integer.parseInt(oldScore.getScore());
+                    if (scoresList.size() == 0){
+                        Bundle b = new Bundle();
+                        b.putString(NAME_KEY, "Player");
+                        b.putInt(SCORE_KEY, 0);
+                        Bundle b1 = new Bundle();
+                        b1.putString(NAME_KEY, "Player");
+                        b1.putInt(SCORE_KEY, 0);
+                        Bundle b2 = new Bundle();
+                        b2.putString(NAME_KEY, "Player");
+                        b2.putInt(SCORE_KEY, 0);
+                        thirdScore = 0;
+                    } else if (scoresList.size() == 1) {
+                        Bundle b = new Bundle();
+                        b.putString(NAME_KEY, "Player");
+                        b.putInt(SCORE_KEY, 0);
+                        Bundle b1 = new Bundle();
+                        b1.putString(NAME_KEY, "Player");
+                        b1.putInt(SCORE_KEY, 0);
+                        thirdScore = 0;
+                    } else if (scoresList.size() == 2) {
+                        Bundle b = new Bundle();
+                        b.putString(NAME_KEY, "Player");
+                        b.putInt(SCORE_KEY, 0);
+                        thirdScore = 0;
+                    }else{
+                        Scores oldScore = scoresList.get(scoresList.size() - 1);
+                        thirdScore = Integer.parseInt(oldScore.getScore());
+                    }
 
                     if (score > thirdScore) {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
@@ -336,6 +368,19 @@ public class PlayHard extends BaseActivity {
                                             R.string.error_save_msg,
                                             Toast.LENGTH_SHORT).show();
                                 }
+                            }
+                        });
+
+                        bShare = (Button) mView.findViewById(R.id.share_button);
+                        bShare.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick (View view) {
+                                shareIntent = new Intent(Intent.ACTION_SEND);
+                                shareIntent.setType("text/plain");
+                                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My App");
+                                shareIntent.putExtra(Intent.EXTRA_TEXT, "I just got a new high score of " +
+                                        score + "! Can you beat it?");
+                                startActivity(Intent.createChooser(shareIntent, "Share via"));
                             }
                         });
 

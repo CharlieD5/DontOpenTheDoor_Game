@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Dec 05 17:24:31 PST 2017
+#Tue Dec 05 23:26:48 PST 2017
 0.baseType=DIRECTORY
 0.base=/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/0
 0.path=classes.dex
