@@ -5,6 +5,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Vibrator;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.Gravity;
@@ -48,6 +49,9 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
+    //Vibrate Variable
+    Vibrator vibrator;
+
     /**
     //Pop-up Window Variables
     private PopupWindow popupWindow;
@@ -68,6 +72,9 @@ public class PlayHard extends BaseActivity {
 
         //Creates Jump Scare audio File
         MediaPlayer bang = MediaPlayer.create(this, R.raw.bang);
+
+        //Creates Vibrator
+        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         r = new Random();
 
@@ -303,6 +310,8 @@ public class PlayHard extends BaseActivity {
                         }}
                     );
                      **/
+                    //Creates Vibrate
+                    vibrator.vibrate(100);
                     //Creates new intent when the game ends
                     Intent pop = new Intent(getApplicationContext(), PopUp.class);
                     startActivity(pop);
