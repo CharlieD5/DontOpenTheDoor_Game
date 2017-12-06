@@ -5,6 +5,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Vibrator;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.Gravity;
@@ -48,12 +49,16 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
+    /**
     //Pop-up Window Variables
     private PopupWindow popupWindow;
     private LayoutInflater layoutInflater;
     private RelativeLayout relativeLayout;
     Runnable mRunnable;
     Handler mHandler=new Handler();
+     **/
+    Vibrator vibrator;
+
 
 
     @Override
@@ -66,6 +71,9 @@ public class PlayHard extends BaseActivity {
 
         //Creates Jump Scare audio File
         MediaPlayer bang = MediaPlayer.create(this, R.raw.bang);
+
+        //Creates Vibrator
+        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         r = new Random();
 
@@ -96,9 +104,9 @@ public class PlayHard extends BaseActivity {
         d3.setEnabled(false);
         d4.setEnabled(false);
 
+        /**
         //Creates the relative Layout to host the pop-up window
         relativeLayout = findViewById(R.id.hard_relative);
-
         //Creates handler to close pop-up window and implements the delay
         //mRunnable = new Runnable() {
            // @Override
@@ -106,6 +114,7 @@ public class PlayHard extends BaseActivity {
                 //relativeLayout.setVisibility(View.GONE);
             //}
         //};
+         **/
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -300,6 +309,14 @@ public class PlayHard extends BaseActivity {
 //                           // mHandler.postDelayed(mRunnable, 10000);
 //                        }
 //                    });
+
+                    //Starts Vibrator
+                    vibrator.vibrate(100);
+                    //Creates pop-up
+                    Intent pop = new Intent(getApplicationContext(), PopUp.class);
+                    startActivity(pop);
+                    //setContentView(R.layout.activity_pop_up);
+
 
                     db.open();
                     List<Scores> scoresList = db.getListOfScores();
