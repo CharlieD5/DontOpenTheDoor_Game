@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center|top"
+        android:layout_marginTop="20dp"
         android:text="Theme Packs"
         android:textAlignment="center"
         android:textSize="36sp"

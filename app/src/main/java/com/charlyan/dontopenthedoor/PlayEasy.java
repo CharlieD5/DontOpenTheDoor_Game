@@ -1,7 +1,6 @@
 package com.charlyan.dontopenthedoor;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
 import java.util.Random;
 
 import static com.charlyan.dontopenthedoor.ScoreActivity.NAME_KEY;
@@ -190,11 +190,12 @@ public class PlayEasy extends BaseActivity {
                 if (left == 0) {
 
                     db.open();
-                    Cursor players = db.getAllScores();
-
+                    List<Scores> scoresList = db.getListOfScores();
+                    Scores oldScore = scoresList.get(scoresList.size() - 1);
+                    int thirdScore = Integer.parseInt(oldScore.getScore());
                     // Vibrate for 500 milliseconds
                     //   v.vibrate(1000);
-                    if (score > 15) {
+                    if (score > thirdScore) {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayEasy.this);
                         View mView = getLayoutInflater().inflate(R.layout.dialog_new_high_score, null);
                         final EditText mPlayerName = (EditText) mView.findViewById(R.id.player_name);
@@ -226,7 +227,7 @@ public class PlayEasy extends BaseActivity {
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();
                     }
-                    else
+                    else if (score <= thirdScore)
                     {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayEasy.this);
                         View mView = getLayoutInflater().inflate(R.layout.dialog_score, null);
@@ -260,7 +261,7 @@ public class PlayEasy extends BaseActivity {
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();
                     }
-
+                    db.close();
                     start_button.setVisibility(View.VISIBLE);
 
                 } else if (left > 0) {

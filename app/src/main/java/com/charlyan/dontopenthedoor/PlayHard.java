@@ -23,6 +23,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
 import java.util.Random;
 
 import static com.charlyan.dontopenthedoor.ScoreActivity.NAME_KEY;
@@ -36,7 +37,7 @@ import static com.charlyan.dontopenthedoor.ScoreActivity.SCORE_KEY;
  * score.
  */
 public class PlayHard extends BaseActivity {
-
+    DBAdapter db = new DBAdapter(this);
     ImageView d1, d2, d3, d4;
     ImageView a1, a2, a3, a4;
     TextView tv_score;
@@ -290,7 +291,12 @@ public class PlayHard extends BaseActivity {
                                                  }
                     );
 
-                    if (score > 45) {
+                    db.open();
+                    List<Scores> scoresList = db.getListOfScores();
+                    Scores oldScore = scoresList.get(scoresList.size() - 1);
+                    int thirdScore = Integer.parseInt(oldScore.getScore());
+
+                    if (score > thirdScore) {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
                         View mView = getLayoutInflater().inflate(R.layout.dialog_new_high_score, null);
                         final EditText mPlayerName = (EditText) mView.findViewById(R.id.player_name);
@@ -325,7 +331,7 @@ public class PlayHard extends BaseActivity {
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();
                     }
-                    else
+                    else if (score <= thirdScore)
                     {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
                         View mView = getLayoutInflater().inflate(R.layout.dialog_score, null);
