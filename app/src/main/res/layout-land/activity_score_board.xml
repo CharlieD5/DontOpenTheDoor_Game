@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:background="?attr/backgroundColor"
+              tools:context="com.charlyan.dontopenthedoor.ScoreActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="?attr/colorAccent"
+            android:text="HIGH SCORES"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimary"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:dividerHeight="5dp"
+            android:foreground="@android:color/transparent"
+            android:paddingBottom="0dp">
+        </ListView>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="120dp"
+            android:background="?attr/colorAccent"
+            android:onClick="ContinueButtonClick"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="MAIN MENU"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:background="?attr/colorPrimaryDark"
+            android:elevation="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="SHARE"
+            android:textSize="18sp"/>
+
+    </GridLayout>
+</GridLayout>

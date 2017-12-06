@@ -283,24 +283,23 @@ public class PlayHard extends BaseActivity {
                 if(left== 0){
 
                     //Creates Pop-Up window once attempts are depleted
-                    layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
-                    ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
-                    popupWindow = new PopupWindow(container, 800, 800, true);
-                    popupWindow.showAtLocation(relativeLayout, Gravity.NO_GRAVITY, 500, 500);
-
-                    //Makes on click listener to stop pop-up window once user clicks outside of popup
-                    container.setOnTouchListener(new View.OnTouchListener(){
-                        @Override
-                        public boolean onTouch(View view, MotionEvent motionEvent){
-                            popupWindow.dismiss();
-                            return true;
-
-                           // container.setVisibility(View.VISIBLE);
-                           // mHandler.removeCallbacks(mRunnable);
-                           // mHandler.postDelayed(mRunnable, 10000);
-                        }
-                                                 }
-                    );
+//                    layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
+//                    ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
+//                    popupWindow = new PopupWindow(container, 800, 800, true);
+//                    popupWindow.showAtLocation(relativeLayout, Gravity.NO_GRAVITY, 500, 500);
+//
+//                    //Makes on click listener to stop pop-up window once user clicks outside of popup
+//                    container.setOnTouchListener(new View.OnTouchListener(){
+//                        @Override
+//                        public boolean onTouch(View view, MotionEvent motionEvent){
+//                            popupWindow.dismiss();
+//                            return true;
+//
+//                           // container.setVisibility(View.VISIBLE);
+//                           // mHandler.removeCallbacks(mRunnable);
+//                           // mHandler.postDelayed(mRunnable, 10000);
+//                        }
+//                    });
 
                     db.open();
                     List<Scores> scoresList = db.getListOfScores();

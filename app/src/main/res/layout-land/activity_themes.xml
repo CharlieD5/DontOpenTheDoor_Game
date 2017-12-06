@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="?attr/backgroundColor"
+        tools:context="com.charlyan.dontopenthedoor.ThemesActivity">
+
+    <TextView
+        android:id="@+id/theme_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:layout_marginTop="20dp"
+        android:text="Theme Packs"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:columnCount="4"
+        android:paddingBottom="10dp"
+        android:paddingLeft="150dp"
+        android:paddingRight="80dp"
+        android:paddingTop="10dp"
+        android:rowCount="2">
+
+        <ImageButton
+            android:id="@+id/fall_button"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@color/black_overlay"
+            android:onClick="onClick"
+            android:scaleType="fitStart"
+            android:tint="@android:color/holo_green_dark"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/winter_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tree2"/>
+
+        <ImageButton
+            android:id="@+id/winter_button"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@color/black_overlay"
+            android:scaleType="fitCenter"
+            app:layout_constraintRight_toLeftOf="@+id/fall_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/snowflake2"/>
+
+        <TextView
+            android:id="@+id/fall_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:text="Fall"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/winter_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:text="Winter"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <ImageButton
+            android:id="@+id/spring_button"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:background="@color/black_overlay"
+            android:scaleType="fitCenter"
+            android:tint="@android:color/holo_red_light"
+            app:srcCompat="@drawable/flower2"/>
+
+        <ImageButton
+            android:id="@+id/summer_button"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:background="@color/black_overlay"
+            android:cropToPadding="false"
+            android:scaleType="fitEnd"
+            android:tint="@android:color/holo_orange_light"
+            app:srcCompat="@drawable/sun2"/>
+
+        <TextView
+            android:id="@+id/spring_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:text="Spring"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/summer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:layout_gravity="center"
+            android:text="Summer"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center|top">
+
+        <Button
+            android:id="@+id/original_theme_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorAccent"
+            android:text="Original"
+            android:paddingHorizontal="27dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="?attr/colorAccent"
+            android:paddingHorizontal="20dp"
+            android:onClick="ExitButtonClick"
+            android:textSize="18sp"
+            android:text="BACK"/>
+    </LinearLayout>
+
+
+</LinearLayout>
