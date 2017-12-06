@@ -796,6 +796,10 @@
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/res/drawable-xxhdpi-v4/ic_mr_button_connected_28_dark.png"
     },
     {
+        "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/layout_activity_pop_up.xml.flat",
+        "source": "/Users/Charlie/DontOpenTheDoor_Game/app/src/main/res/layout/activity_pop_up.xml"
+    },
+    {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png"
     },
@@ -1004,10 +1008,6 @@
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/res/drawable-mdpi-v4/ic_media_stop_light.png"
     },
     {
-        "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/layout_popup.xml.flat",
-        "source": "/Users/Charlie/DontOpenTheDoor_Game/app/src/main/res/layout/popup.xml"
-    },
-    {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_design_snackbar_background.xml.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/39be8562039358f9ce00bf14edd35260/res/drawable/design_snackbar_background.xml"
     },
@@ -1142,10 +1142,6 @@
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_clown.jpg.flat",
-        "source": "/Users/Charlie/DontOpenTheDoor_Game/app/src/main/res/drawable/clown.jpg"
     },
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -1358,6 +1354,10 @@
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_clown.png.flat",
+        "source": "/Users/Charlie/DontOpenTheDoor_Game/app/src/main/res/drawable/clown.png"
     },
     {
         "merged": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_media_stop_light.png.flat",

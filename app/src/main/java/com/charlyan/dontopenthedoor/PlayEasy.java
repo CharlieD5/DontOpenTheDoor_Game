@@ -23,7 +23,6 @@ import static com.charlyan.dontopenthedoor.ScoreActivity.NAME_KEY;
 import static com.charlyan.dontopenthedoor.ScoreActivity.SCORE_KEY;
 
 /**
- * Created by Anthony Gomez
  *
  * PlayHard activity is launched by selecting the hard difficulty option after selecting Play Game.
  * Creates 2 clickable image views and creates the game activity. Saves highest score reached in integer
@@ -316,6 +315,7 @@ public class PlayEasy extends BaseActivity {
                     }
                     db.close();
                     start_button.setVisibility(View.VISIBLE);
+                    back_button.setVisibility(View.VISIBLE);
 
                 } else if (left > 0) {
                     theGameActions();

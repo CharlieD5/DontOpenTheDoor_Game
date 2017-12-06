@@ -8,19 +8,13 @@ import android.os.Handler;
 import android.os.Vibrator;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.PopupWindow;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,7 +25,7 @@ import static com.charlyan.dontopenthedoor.ScoreActivity.NAME_KEY;
 import static com.charlyan.dontopenthedoor.ScoreActivity.SCORE_KEY;
 
 /**
- * Created by Anthony Gomez
+ *
  *
  * PlayHard activity is launched by selecting the hard difficulty option after selecting Play Game.
  * Creates 4 clickable image views and creates the game activity. Saves highest score reached in integer
@@ -49,18 +43,14 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
-<<<<<<< HEAD
-
     Button bShare;
     Intent shareIntent;
 
 
-=======
     //Vibrate Variable
     Vibrator vibrator;
 
     /**
->>>>>>> 3b3017a1680caaa25632ecbc58bac3e0f037b912
     //Pop-up Window Variables
     private PopupWindow popupWindow;
     private LayoutInflater layoutInflater;
@@ -300,30 +290,9 @@ public class PlayHard extends BaseActivity {
 
                 if(left== 0){
 
-                    /**
-                    //Creates Pop-Up window once attempts are depleted
-                    layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
-                    ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
-                    popupWindow = new PopupWindow(container, 800, 800, true);
-                    popupWindow.showAtLocation(relativeLayout, Gravity.NO_GRAVITY, 500, 500);
-                    //Makes on click listener to stop pop-up window once user clicks outside of popup
-                    container.setOnTouchListener(new View.OnTouchListener(){
-                        @Override
-                        public boolean onTouch(View view, MotionEvent motionEvent){
-                            popupWindow.dismiss();
-                            return true;
-                           // container.setVisibility(View.VISIBLE);
-                           // mHandler.removeCallbacks(mRunnable);
-                           // mHandler.postDelayed(mRunnable, 10000);
-                        }}
-                    );
-                     **/
                     //Creates Vibrate
                     vibrator.vibrate(100);
-                    //Creates new intent when the game ends
-                    Intent pop = new Intent(getApplicationContext(), PopUp.class);
-                    startActivity(pop);
-                    //setContentView(R.layout.activity_pop_up);
+
 
 
                     db.open();
@@ -440,9 +409,9 @@ public class PlayHard extends BaseActivity {
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();
                     }
-
+                    db.close();
                     start_button.setVisibility(View.VISIBLE);
-
+                    back_button.setVisibility(View.VISIBLE);
                 } else if(left > 0){
                     theGameActions();
                 }
