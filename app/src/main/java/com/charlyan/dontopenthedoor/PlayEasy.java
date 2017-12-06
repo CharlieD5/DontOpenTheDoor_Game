@@ -56,7 +56,7 @@ public class PlayEasy extends BaseActivity {
         r = new Random();
 
         start_button = (Button) findViewById(R.id.start_button);
-        back_button = findViewById(R.id.back_button);
+        back_button = (Button) findViewById(R.id.back_button);
         tv_score = (TextView) findViewById(R.id.tv_score);
         d1 = (ImageView) findViewById(R.id.d1);
         d2 = (ImageView) findViewById(R.id.d2);
@@ -92,20 +92,14 @@ public class PlayEasy extends BaseActivity {
             }
         });
 
-//        back_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Handler handler = new Handler();
-//                handler.postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        theGameActions();
-//                    }
-//                }, 1000);
-//                back_button.setEnabled(false);
-//                back_button.setVisibility(View.INVISIBLE);
-//            }
-//        });
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PlayEasy.this, DifficultyActivity.class);
+                startActivity(intent);
+                setContentView(R.layout.activity_difficulty_selection);
+            }
+        });
 
         d1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -284,10 +278,5 @@ public class PlayEasy extends BaseActivity {
                 }
             }
         }, fps);
-    }
-    public void BackButtonClick(View view) {
-        Intent intent = new Intent(PlayEasy.this, DifficultyActivity.class);
-        startActivity(intent);
-        setContentView(R.layout.activity_difficulty_selection);
     }
 }

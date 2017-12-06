@@ -99,6 +99,15 @@ public class PlayMedium extends BaseActivity {
             }
         });
 
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PlayMedium.this, DifficultyActivity.class);
+                startActivity(intent);
+                setContentView(R.layout.activity_difficulty_selection);
+            }
+        });
+
         d1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -307,10 +316,4 @@ public class PlayMedium extends BaseActivity {
         }, fps);
 
     }
-    public void BackButtonClick(View view) {
-        Intent intent = new Intent(PlayMedium.this, DifficultyActivity.class);
-        startActivity(intent);
-        setContentView(R.layout.activity_difficulty_selection);
-    }
-
 }

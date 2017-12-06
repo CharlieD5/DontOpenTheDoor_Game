@@ -87,5 +87,4 @@
         android:text="BACK"
         android:textColor="@color/black_overlay"/>
 
-
 </RelativeLayout>
