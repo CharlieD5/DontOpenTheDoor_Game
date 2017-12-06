@@ -1,7 +1,6 @@
 package com.charlyan.dontopenthedoor;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
 import java.util.Random;
 
 import static com.charlyan.dontopenthedoor.ScoreActivity.NAME_KEY;
@@ -31,6 +31,7 @@ import static com.charlyan.dontopenthedoor.ScoreActivity.SCORE_KEY;
  */
 
 public class PlayEasy extends BaseActivity {
+    DBAdapter db = new DBAdapter(this);
     ImageView d1, d2;
     ImageView a1, a2;
     TextView tv_score;
@@ -55,7 +56,7 @@ public class PlayEasy extends BaseActivity {
         r = new Random();
 
         start_button = (Button) findViewById(R.id.start_button);
-        back_button = findViewById(R.id.back_button);
+        back_button = (Button) findViewById(R.id.back_button);
         tv_score = (TextView) findViewById(R.id.tv_score);
         d1 = (ImageView) findViewById(R.id.d1);
         d2 = (ImageView) findViewById(R.id.d2);
@@ -91,20 +92,14 @@ public class PlayEasy extends BaseActivity {
             }
         });
 
-//        back_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Handler handler = new Handler();
-//                handler.postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        theGameActions();
-//                    }
-//                }, 1000);
-//                back_button.setEnabled(false);
-//                back_button.setVisibility(View.INVISIBLE);
-//            }
-//        });
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PlayEasy.this, DifficultyActivity.class);
+                startActivity(intent);
+                setContentView(R.layout.activity_difficulty_selection);
+            }
+        });
 
         d1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -202,10 +197,14 @@ public class PlayEasy extends BaseActivity {
                 }
 
                 if (left == 0) {
+                    db.open();
+                    List<Scores> scoresList = db.getListOfScores();
+                    Scores oldScore = scoresList.get(scoresList.size() - 1);
+                    int thirdScore = Integer.parseInt(oldScore.getScore());
 
                     // Vibrate for 500 milliseconds
                     //   v.vibrate(1000);
-                    if (score > 15) {
+                    if (score > thirdScore) {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayEasy.this);
                         View mView = getLayoutInflater().inflate(R.layout.dialog_new_high_score, null);
                         final EditText mPlayerName = (EditText) mView.findViewById(R.id.player_name);
@@ -237,7 +236,7 @@ public class PlayEasy extends BaseActivity {
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();
                     }
-                    else
+                    else if (score <= thirdScore)
                     {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayEasy.this);
                         View mView = getLayoutInflater().inflate(R.layout.dialog_score, null);
@@ -271,7 +270,7 @@ public class PlayEasy extends BaseActivity {
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();
                     }
-
+                    db.close();
                     start_button.setVisibility(View.VISIBLE);
 
                 } else if (left > 0) {
@@ -279,10 +278,5 @@ public class PlayEasy extends BaseActivity {
                 }
             }
         }, fps);
-    }
-    public void BackButtonClick(View view) {
-        Intent intent = new Intent(PlayEasy.this, DifficultyActivity.class);
-        startActivity(intent);
-        setContentView(R.layout.activity_difficulty_selection);
     }
 }

@@ -127,6 +127,7 @@ public class DBAdapter {
         } else if (scoresList.size() < 4) {
             return scoresList;
         }
+
         return scoresList;
     }
 }
