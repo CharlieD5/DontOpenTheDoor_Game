@@ -16,13 +16,6 @@ public class ScoreActivity extends BaseActivity {
 
     private ListView mListView;
     Button bContinue;
-    Button bShare;
-    int s1, s2, s3;
-    Intent shareIntent;
-    String shareMessage = "My top 3 high scores for Don't Open The Door are: "
-            + ", "
-            + ", "
-            + "! Can you beat mine?";
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -63,19 +56,6 @@ public class ScoreActivity extends BaseActivity {
             ArrayAdapter<Scores> adapter = new ScoreAdapter(this, scoresList);
             mListView.setAdapter(adapter);
         }
-
-        bShare = (Button) findViewById(R.id.share_button);
-        bShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                shareIntent = new Intent(Intent.ACTION_SEND);
-                shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My App");
-                shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
-                startActivity(Intent.createChooser(shareIntent, "Share via"));
-            }
-        });
-
 
     }
 

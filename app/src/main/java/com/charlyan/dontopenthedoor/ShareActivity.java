@@ -8,6 +8,6 @@ public class ShareActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_score_board);
+        setContentView(R.layout.dialog_new_high_score);
     }
 }
