@@ -100,12 +100,12 @@ public class PlayHard extends BaseActivity {
         relativeLayout = findViewById(R.id.hard_relative);
 
         //Creates handler to close pop-up window and implements the delay
-        mRunnable = new Runnable() {
-            @Override
-            public void run() {
-                relativeLayout.setVisibility(View.GONE);
-            }
-        };
+        //mRunnable = new Runnable() {
+           // @Override
+            //public void run() {
+                //relativeLayout.setVisibility(View.GONE);
+            //}
+        //};
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -284,10 +284,9 @@ public class PlayHard extends BaseActivity {
 
                     //Creates Pop-Up window once attempts are depleted
                     layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
-                    final ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
-
+                    ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
                     popupWindow = new PopupWindow(container, 800, 800, true);
-                    popupWindow.showAtLocation(relativeLayout, Gravity.CLIP_HORIZONTAL, 500, 500);
+                    popupWindow.showAtLocation(relativeLayout, Gravity.NO_GRAVITY, 500, 500);
 
                     //Makes on click listener to stop pop-up window once user clicks outside of popup
                     container.setOnTouchListener(new View.OnTouchListener(){
