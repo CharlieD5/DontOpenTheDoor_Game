@@ -5,6 +5,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Vibrator;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.Gravity;
@@ -48,17 +49,25 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
+<<<<<<< HEAD
 
     Button bShare;
     Intent shareIntent;
 
 
+=======
+    //Vibrate Variable
+    Vibrator vibrator;
+
+    /**
+>>>>>>> 3b3017a1680caaa25632ecbc58bac3e0f037b912
     //Pop-up Window Variables
     private PopupWindow popupWindow;
     private LayoutInflater layoutInflater;
     private RelativeLayout relativeLayout;
     Runnable mRunnable;
     Handler mHandler=new Handler();
+     **/
 
 
     @Override
@@ -71,6 +80,9 @@ public class PlayHard extends BaseActivity {
 
         //Creates Jump Scare audio File
         MediaPlayer bang = MediaPlayer.create(this, R.raw.bang);
+
+        //Creates Vibrator
+        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         r = new Random();
 
@@ -101,16 +113,17 @@ public class PlayHard extends BaseActivity {
         d3.setEnabled(false);
         d4.setEnabled(false);
 
+        /**
         //Creates the relative Layout to host the pop-up window
         relativeLayout = findViewById(R.id.hard_relative);
-
         //Creates handler to close pop-up window and implements the delay
-        mRunnable = new Runnable() {
-            @Override
-            public void run() {
-                relativeLayout.setVisibility(View.GONE);
-            }
-        };
+        //mRunnable = new Runnable() {
+           // @Override
+            //public void run() {
+                //relativeLayout.setVisibility(View.GONE);
+            //}
+        //};
+         **/
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -287,26 +300,31 @@ public class PlayHard extends BaseActivity {
 
                 if(left== 0){
 
+                    /**
                     //Creates Pop-Up window once attempts are depleted
                     layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
-                    final ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
-
+                    ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
                     popupWindow = new PopupWindow(container, 800, 800, true);
-                    popupWindow.showAtLocation(relativeLayout, Gravity.CLIP_HORIZONTAL, 500, 500);
-
+                    popupWindow.showAtLocation(relativeLayout, Gravity.NO_GRAVITY, 500, 500);
                     //Makes on click listener to stop pop-up window once user clicks outside of popup
                     container.setOnTouchListener(new View.OnTouchListener(){
                         @Override
                         public boolean onTouch(View view, MotionEvent motionEvent){
                             popupWindow.dismiss();
                             return true;
-
                            // container.setVisibility(View.VISIBLE);
                            // mHandler.removeCallbacks(mRunnable);
                            // mHandler.postDelayed(mRunnable, 10000);
-                        }
-                                                 }
+                        }}
                     );
+                     **/
+                    //Creates Vibrate
+                    vibrator.vibrate(100);
+                    //Creates new intent when the game ends
+                    Intent pop = new Intent(getApplicationContext(), PopUp.class);
+                    startActivity(pop);
+                    //setContentView(R.layout.activity_pop_up);
+
 
                     db.open();
                     int thirdScore;
