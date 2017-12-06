@@ -310,6 +310,7 @@ public class PlayEasy extends BaseActivity {
                             }
                         });
 
+
                         mBuilder.setView(mView);
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();

@@ -31,8 +31,6 @@ import static com.charlyan.dontopenthedoor.ScoreActivity.NAME_KEY;
 import static com.charlyan.dontopenthedoor.ScoreActivity.SCORE_KEY;
 
 /**
- * Created by Anthony Gomez
- *
  * PlayHard activity is launched by selecting the hard difficulty option after selecting Play Game.
  * Creates 4 clickable image views and creates the game activity. Saves highest score reached in integer
  * score.
@@ -49,17 +47,9 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
-    /**
-    //Pop-up Window Variables
-    private PopupWindow popupWindow;
-    private LayoutInflater layoutInflater;
-    private RelativeLayout relativeLayout;
-    Runnable mRunnable;
-    Handler mHandler=new Handler();
-     **/
     Vibrator vibrator;
-
-
+    Button bShare;
+    Intent shareIntent;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -103,18 +93,6 @@ public class PlayHard extends BaseActivity {
         d2.setEnabled(false);
         d3.setEnabled(false);
         d4.setEnabled(false);
-
-        /**
-        //Creates the relative Layout to host the pop-up window
-        relativeLayout = findViewById(R.id.hard_relative);
-        //Creates handler to close pop-up window and implements the delay
-        //mRunnable = new Runnable() {
-           // @Override
-            //public void run() {
-                //relativeLayout.setVisibility(View.GONE);
-            //}
-        //};
-         **/
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -291,32 +269,8 @@ public class PlayHard extends BaseActivity {
 
                 if(left== 0){
 
-                    //Creates Pop-Up window once attempts are depleted
-//                    layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
-//                    ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
-//                    popupWindow = new PopupWindow(container, 800, 800, true);
-//                    popupWindow.showAtLocation(relativeLayout, Gravity.NO_GRAVITY, 500, 500);
-//
-//                    //Makes on click listener to stop pop-up window once user clicks outside of popup
-//                    container.setOnTouchListener(new View.OnTouchListener(){
-//                        @Override
-//                        public boolean onTouch(View view, MotionEvent motionEvent){
-//                            popupWindow.dismiss();
-//                            return true;
-//
-//                           // container.setVisibility(View.VISIBLE);
-//                           // mHandler.removeCallbacks(mRunnable);
-//                           // mHandler.postDelayed(mRunnable, 10000);
-//                        }
-//                    });
-
                     //Starts Vibrator
                     vibrator.vibrate(100);
-                    //Creates pop-up
-                    Intent pop = new Intent(getApplicationContext(), PopUp.class);
-                    startActivity(pop);
-                    //setContentView(R.layout.activity_pop_up);
-
 
                     db.open();
                     int thirdScore;
@@ -381,6 +335,19 @@ public class PlayHard extends BaseActivity {
                             }
                         });
 
+                        bShare = (Button) mView.findViewById(R.id.share_button);
+                        bShare.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick (View view) {
+                                shareIntent = new Intent(Intent.ACTION_SEND);
+                                shareIntent.setType("text/plain");
+                                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My App");
+                                shareIntent.putExtra(Intent.EXTRA_TEXT, "I just got a new high score of " +
+                                        score + "! Can you beat it?");
+                                startActivity(Intent.createChooser(shareIntent, "Share via"));
+                            }
+                        });
+
                         mBuilder.setView(mView);
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();
@@ -414,6 +381,8 @@ public class PlayHard extends BaseActivity {
                                 setContentView(R.layout.activity_hard_gameplay);
                             }
                         });
+
+
 
                         mBuilder.setView(mView);
                         AlertDialog dialog = mBuilder.create();

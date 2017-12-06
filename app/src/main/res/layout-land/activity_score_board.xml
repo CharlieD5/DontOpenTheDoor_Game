@@ -60,17 +60,5 @@
             android:text="MAIN MENU"
             android:textSize="18sp"/>
 
-        <Button
-            android:id="@+id/share_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="45dp"
-            android:background="?attr/colorPrimaryDark"
-            android:elevation="0dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:text="SHARE"
-            android:textSize="18sp"/>
-
     </GridLayout>
 </GridLayout>
