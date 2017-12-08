@@ -29,7 +29,7 @@
         android:paddingBottom="10dp"
         android:paddingLeft="78dp"
         android:paddingRight="50dp"
-        android:paddingTop="10dp"
+        android:paddingTop="25dp"
         android:rowCount="2">
 
         <ImageButton
