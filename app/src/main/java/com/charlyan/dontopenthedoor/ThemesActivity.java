@@ -13,7 +13,6 @@ public class ThemesActivity extends BaseActivity implements View.OnClickListener
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_themes);
         ((ImageButton)findViewById(R.id.fall_button)).setOnClickListener(this);
         ((ImageButton)findViewById(R.id.winter_button)).setOnClickListener(this);

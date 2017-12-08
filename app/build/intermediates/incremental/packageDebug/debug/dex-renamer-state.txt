@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Tue Dec 05 23:44:21 PST 2017
 base.0=/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/0
 =======
 #Tue Dec 05 23:21:53 PST 2017
+=======
+#Wed Dec 06 02:28:58 PST 2017
+>>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
 path.1=classes.dex
 >>>>>>> d7668d40b41544685d2c37cfd36a114d28bf8509
 path.0=classes.dex

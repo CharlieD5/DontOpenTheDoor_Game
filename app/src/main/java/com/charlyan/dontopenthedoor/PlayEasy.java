@@ -49,10 +49,6 @@ public class PlayEasy extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_easy_gameplay);
 
         r = new Random();
@@ -308,6 +304,7 @@ public class PlayEasy extends BaseActivity {
                                 setContentView(R.layout.activity_easy_gameplay);
                             }
                         });
+
 
                         mBuilder.setView(mView);
                         AlertDialog dialog = mBuilder.create();
