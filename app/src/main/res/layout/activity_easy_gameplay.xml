@@ -64,7 +64,7 @@
         android:layout_toEndOf="@+id/tv_score"
         android:background="?attr/colorPrimaryDark"
         android:text="START"
-        android:textColor="@color/black_overlay"/>
+        android:textColor="@android:color/background_dark"/>
 
     <TextView
         android:id="@+id/tv_score"
@@ -85,6 +85,6 @@
         android:layout_toStartOf="@+id/tv_score"
         android:background="?attr/colorPrimaryDark"
         android:text="BACK"
-        android:textColor="@color/black_overlay"/>
+        android:textColor="@android:color/background_dark"/>
 
 </RelativeLayout>

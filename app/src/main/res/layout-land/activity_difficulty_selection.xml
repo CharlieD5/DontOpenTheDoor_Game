@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/backgroundColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.charlyan.dontopenthedoor.DifficultyActivity">
+
+    <Button
+        android:id="@+id/easy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorAccent"
+        android:onClick="EasyButtonClick"
+        android:text="EASY"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/medium_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="?attr/colorAccent"
+        android:onClick="MediumButtonClick"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="MEDIUM"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/hard_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="HardButtonClick"
+        android:text="HARD"
+        android:background="?attr/colorAccent"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="BackButtonClick"
+        android:text="BACK"
+        android:background="?attr/colorPrimaryDark"
+        android:textSize="18sp"/>
+</LinearLayout>

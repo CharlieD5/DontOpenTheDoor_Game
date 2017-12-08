@@ -43,22 +43,13 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
+
     Button bShare;
     Intent shareIntent;
 
 
     //Vibrate Variable
     Vibrator vibrator;
-
-    /**
-    //Pop-up Window Variables
-    private PopupWindow popupWindow;
-    private LayoutInflater layoutInflater;
-    private RelativeLayout relativeLayout;
-    Runnable mRunnable;
-    Handler mHandler=new Handler();
-     **/
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -70,10 +61,7 @@ public class PlayHard extends BaseActivity {
 
         //Creates Jump Scare audio File
         MediaPlayer bang = MediaPlayer.create(this, R.raw.bang);
-
-        //Creates Vibrator
-        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
-
+        vibrator =(Vibrator) getSystemService(VIBRATOR_SERVICE);
         r = new Random();
 
         start_button = findViewById(R.id.start_button);
@@ -102,18 +90,6 @@ public class PlayHard extends BaseActivity {
         d2.setEnabled(false);
         d3.setEnabled(false);
         d4.setEnabled(false);
-
-        /**
-        //Creates the relative Layout to host the pop-up window
-        relativeLayout = findViewById(R.id.hard_relative);
-        //Creates handler to close pop-up window and implements the delay
-        //mRunnable = new Runnable() {
-           // @Override
-            //public void run() {
-                //relativeLayout.setVisibility(View.GONE);
-            //}
-        //};
-         **/
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -292,9 +268,6 @@ public class PlayHard extends BaseActivity {
 
                     //Creates Vibrate
                     vibrator.vibrate(100);
-
-
-
                     db.open();
                     int thirdScore;
                     List<Scores> scoresList = db.getListOfScores();
@@ -326,6 +299,7 @@ public class PlayHard extends BaseActivity {
                         Scores oldScore = scoresList.get(scoresList.size() - 1);
                         thirdScore = Integer.parseInt(oldScore.getScore());
                     }
+
 
                     if (score > thirdScore) {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
