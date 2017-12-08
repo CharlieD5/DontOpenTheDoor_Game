@@ -54,16 +54,13 @@ public class PlayHard extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_hard_gameplay);
 
         //Creates Jump Scare audio File
         MediaPlayer bang = MediaPlayer.create(this, R.raw.bang);
 
         //Creates Vibrator
-        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+        //vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         r = new Random();
 
