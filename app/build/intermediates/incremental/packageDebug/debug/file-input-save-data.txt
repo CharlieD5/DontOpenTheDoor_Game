@@ -1,17 +1,17 @@
 #Internal package file, do not edit.
-#Wed Dec 06 02:28:58 PST 2017
-2.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/17
+#Thu Dec 07 23:30:40 PST 2017
+2.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/12
 5.set=DEX
 0.path=classes.dex
 2.baseType=DIRECTORY
-3.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/12
+3.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/15
 2.set=DEX
 1.path=classes.dex
-4.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/15
+4.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/13
 count=6
 5.baseType=DIRECTORY
 2.path=classes.dex
-5.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/13
+5.base=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/11
 4.set=DEX
 3.path=classes.dex
 3.baseType=DIRECTORY

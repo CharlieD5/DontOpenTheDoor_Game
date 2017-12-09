@@ -24,12 +24,12 @@
 
     <GridLayout
         android:layout_width="fill_parent"
-        android:layout_height="166dp"
+        android:layout_height="160dp"
         android:columnCount="4"
-        android:paddingBottom="10dp"
+        android:paddingBottom="5dp"
         android:paddingLeft="78dp"
         android:paddingRight="50dp"
-        android:paddingTop="25dp"
+        android:paddingTop="20dp"
         android:rowCount="2">
 
         <ImageButton
@@ -151,18 +151,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="center|top">
+        android:layout_gravity="center|top"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/original_theme_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:background="?attr/colorAccent"
-            android:text="Original"
             android:paddingHorizontal="27dp"
-            android:textSize="18sp"
-            android:layout_gravity="center"/>
+            android:text="Original"
+            android:textSize="18sp"/>
 
         <Button
             android:id="@+id/exit_button"
@@ -171,10 +171,10 @@
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:background="?attr/colorAccent"
-            android:paddingHorizontal="20dp"
             android:onClick="ExitButtonClick"
-            android:textSize="18sp"
-            android:text="BACK"/>
+            android:paddingHorizontal="20dp"
+            android:text="BACK"
+            android:textSize="18sp"/>
     </LinearLayout>
 
 
