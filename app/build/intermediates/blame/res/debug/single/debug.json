@@ -1532,6 +1532,10 @@
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/drawable-hdpi-v4/ic_media_stop_dark.png"
     },
     {
+        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/layout-land_activity_pop_up.xml.flat",
+        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout-land/activity_pop_up.xml"
+    },
+    {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable_tree2.xml.flat",
         "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/drawable/tree2.xml"
     },
@@ -2186,10 +2190,6 @@
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/layout-land_popup.xml.flat",
-        "source": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/res/layout-land/popup.xml"
     },
     {
         "merged": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_mr_button_connecting_17_dark.png.flat",
