@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
@@ -24,6 +25,12 @@
                 },
                 {
                     "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+=======
+            "outputFile": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+>>>>>>> 223f99ad8afa0f2e92f526f4d6f707b988a57538
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -33,7 +40,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+=======
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+>>>>>>> 223f99ad8afa0f2e92f526f4d6f707b988a57538
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -48,6 +59,28 @@
                         "endColumns": "68,68",
                         "endOffsets": "1234,1303"
                     }
+<<<<<<< HEAD
+=======
+                },
+                {
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2fae5e36f043f0ee298d52d852870f9f/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,550,614,677",
+                        "endLines": "2,3,4,5,6,7,8,9,10,14",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "110,180,251,323,381,439,545,609,672,854"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15,16,17,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "611,671,741,812,884,942,1000,1106,1308,1371",
+                        "endLines": "10,11,12,13,14,15,16,17,20,24",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "666,736,807,879,937,995,1101,1165,1366,1548"
+                    }
+>>>>>>> 223f99ad8afa0f2e92f526f4d6f707b988a57538
                 }
             ]
         }

@@ -40,8 +40,11 @@
         </activity>
         <activity android:name="com.charlyan.dontopenthedoor.ScoreActivity" >
         </activity>
+<<<<<<< HEAD
         <activity android:name="com.charlyan.dontopenthedoor.PopUp" >
         </activity>
+=======
+>>>>>>> 223f99ad8afa0f2e92f526f4d6f707b988a57538
 
         <meta-data
             android:name="android.support.VERSION"

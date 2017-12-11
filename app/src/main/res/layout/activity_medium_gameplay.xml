@@ -78,8 +78,7 @@
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/tv_score"
         android:background="?attr/colorPrimaryDark"
-        android:text="START"
-        android:textColor="@android:color/background_dark"/>
+        android:text="START"/>
 
     <TextView
         android:id="@+id/tv_score"
@@ -98,8 +97,7 @@
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/tv_score"
         android:background="?attr/colorPrimaryDark"
-        android:text="BACK"
-        android:textColor="@android:color/background_dark"/>
+        android:text="BACK"/>
 
 
 

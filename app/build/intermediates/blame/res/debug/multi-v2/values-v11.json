@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
             "map": [
                 {
                     "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/values-v11/values-v11.xml",
+=======
+            "outputFile": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/values-v11/values-v11.xml",
+>>>>>>> 223f99ad8afa0f2e92f526f4d6f707b988a57538
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

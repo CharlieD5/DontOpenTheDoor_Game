@@ -8,11 +8,19 @@ import android.os.Handler;
 import android.os.Vibrator;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,11 +47,13 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
+
     Button bShare;
     Intent shareIntent;
 
     //Vibrate Variable
     Vibrator vibrator;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,6 +66,7 @@ public class PlayHard extends BaseActivity {
         //Creates vibrator
         //Might need to create inside method
         vibrator =(Vibrator) getSystemService(VIBRATOR_SERVICE);
+
 
         r = new Random();
 
@@ -262,6 +273,9 @@ public class PlayHard extends BaseActivity {
                 // If the player doesn't get to the door in time and loses
                 if(left== 0){
 
+                    an.start();
+
+
                     //Plays Jump Scare
                     final MediaPlayer player = MediaPlayer.create(PlayHard.this, R.raw.bang);
                     player.setLooping(false);
@@ -406,7 +420,6 @@ public class PlayHard extends BaseActivity {
 
                         }, 5000);
                     }
-
 
                     db.close();
                     start_button.setVisibility(View.VISIBLE);

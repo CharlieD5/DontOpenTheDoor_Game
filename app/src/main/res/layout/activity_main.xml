@@ -93,6 +93,6 @@
         android:onClick="ThemeButtonClick"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
-        android:text="ACHIEVEMENTS"
+        android:text="THEMES"
         android:textSize="18sp"/>
 </LinearLayout>

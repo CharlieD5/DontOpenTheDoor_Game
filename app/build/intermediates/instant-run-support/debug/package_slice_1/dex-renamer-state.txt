@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Fri Dec 08 16:21:32 PST 2017
 base.0=/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/2
+=======
+#Fri Dec 08 20:11:15 PST 2017
+base.0=/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/transforms/dexMerger/debug/1
+>>>>>>> 223f99ad8afa0f2e92f526f4d6f707b988a57538
 path.0=classes.dex
 renamed.0=classes.dex

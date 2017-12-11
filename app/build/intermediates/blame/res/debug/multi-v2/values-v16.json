@@ -1,10 +1,27 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/Charlie/DontOpenTheDoor_Game/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/res/values-v16/values-v16.xml",
+=======
+            "outputFile": "/Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5eb71c250245f169442c2ef1de97c68a/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/res/values-v16/values-v16.xml",
+>>>>>>> 223f99ad8afa0f2e92f526f4d6f707b988a57538
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,6 +38,7 @@
                         "endColumns": "12",
                         "endOffsets": "289"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "/Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cf020ce177fc7d8b6b28815a3bff1b07/res/values-v16/values-v16.xml",
@@ -31,6 +49,8 @@
                         "endColumns": "65",
                         "endOffsets": "116"
                     }
+=======
+>>>>>>> 223f99ad8afa0f2e92f526f4d6f707b988a57538
                 }
             ]
         }
