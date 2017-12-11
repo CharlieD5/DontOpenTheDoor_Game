@@ -2,13 +2,12 @@ package com.charlyan.dontopenthedoor;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -195,6 +194,12 @@ public class PlayEasy extends BaseActivity {
                 }
 
                 if (left == 0) {
+
+                    //Plays Jump Scare
+                    final MediaPlayer player = MediaPlayer.create(PlayEasy.this, R.raw.bang);
+                    player.setLooping(false);
+                    player.start();
+
                     db.open();
                     int thirdScore;
                     List<Scores> scoresList = db.getListOfScores();

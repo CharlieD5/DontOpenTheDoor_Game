@@ -3,15 +3,15 @@
     android:oneshot="true">
 
     <item
-        android:duration="150"
+        android:duration="100"
         android:drawable="@drawable/door1"/>
     <item
-        android:duration="150"
+        android:duration="100"
         android:drawable="@drawable/door2"/>
     <item
-        android:duration="150"
+        android:duration="100"
         android:drawable="@drawable/door3"/>
     <item
-        android:duration="150"
+        android:duration="100"
         android:drawable="@drawable/door4"/>
 </animation-list>

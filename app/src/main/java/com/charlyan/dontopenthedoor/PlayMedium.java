@@ -8,8 +8,6 @@ import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -235,6 +233,11 @@ public class PlayMedium extends BaseActivity {
 
 
                 if(left== 0){
+
+                    //Plays Jump Scare
+                    final MediaPlayer player = MediaPlayer.create(PlayMedium.this, R.raw.bang);
+                    player.setLooping(false);
+                    player.start();
 
                     db.open();
                     int thirdScore;

@@ -9,8 +9,6 @@ import android.os.Vibrator;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -25,11 +23,6 @@ import static com.charlyan.dontopenthedoor.ScoreActivity.NAME_KEY;
 import static com.charlyan.dontopenthedoor.ScoreActivity.SCORE_KEY;
 
 /**
-<<<<<<< HEAD
- *
- *
-=======
->>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
  * PlayHard activity is launched by selecting the hard difficulty option after selecting Play Game.
  * Creates 4 clickable image views and creates the game activity. Saves highest score reached in integer
  * score.
@@ -46,16 +39,8 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
-<<<<<<< HEAD
-
     Button bShare;
     Intent shareIntent;
-
-=======
-    Vibrator vibrator;
-    Button bShare;
-    Intent shareIntent;
->>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
 
     //Vibrate Variable
     Vibrator vibrator;
@@ -67,14 +52,11 @@ public class PlayHard extends BaseActivity {
 
         //Creates Jump Scare audio File
         MediaPlayer bang = MediaPlayer.create(this, R.raw.bang);
-<<<<<<< HEAD
+
+        //Creates vibrator
+        //Might need to create inside method
         vibrator =(Vibrator) getSystemService(VIBRATOR_SERVICE);
-=======
 
-        //Creates Vibrator
-        //vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
-
->>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
         r = new Random();
 
         start_button = findViewById(R.id.start_button);
@@ -277,19 +259,25 @@ public class PlayHard extends BaseActivity {
                     templeft = 0;
                 }
 
+                // If the player doesn't get to the door in time and loses
                 if(left== 0){
 
-<<<<<<< HEAD
-                    //Creates Vibrate
-                    vibrator.vibrate(100);
-=======
+                    //Plays Jump Scare
+                    final MediaPlayer player = MediaPlayer.create(PlayHard.this, R.raw.bang);
+                    player.setLooping(false);
+                    player.start();
+
+
                     //Starts Vibrator
                     vibrator.vibrate(100);
 
->>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
+
                     db.open();
                     int thirdScore;
                     List<Scores> scoresList = db.getListOfScores();
+
+                    // If the list is empty or has no scores in second or third place
+                    // else it has all player scores
                     if (scoresList.size() == 0){
                         Bundle b = new Bundle();
                         b.putString(NAME_KEY, "Player");
@@ -318,61 +306,69 @@ public class PlayHard extends BaseActivity {
                         Scores oldScore = scoresList.get(scoresList.size() - 1);
                         thirdScore = Integer.parseInt(oldScore.getScore());
                     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
-
+                    // if high score
                     if (score > thirdScore) {
-                        AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
-                        View mView = getLayoutInflater().inflate(R.layout.dialog_new_high_score, null);
-                        final EditText mPlayerName = (EditText) mView.findViewById(R.id.player_name);
-
-                        Button mSaveScore = (Button) mView.findViewById(R.id.save_score_button);
-                        TextView newScore = (TextView) mView.findViewById(R.id.score);
-                        newScore.setText("Score: " + score);
-                        mSaveScore.setOnClickListener(new View.OnClickListener() {
+                        new Handler().postDelayed(new Runnable() {
                             @Override
-                            public void onClick(View view) {
-                                String name = mPlayerName.getText().toString();
-                                if (!name.isEmpty()) {
-                                    Toast.makeText(PlayHard.this,
-                                            R.string.success_save_msg,
-                                            Toast.LENGTH_SHORT).show();
-                                    Bundle b = new Bundle();
-                                    b.putString(NAME_KEY, name);
-                                    b.putInt(SCORE_KEY, score);
-                                    Intent intent = new Intent(PlayHard.this, ScoreActivity.class);
-                                    intent.putExtras(b);
-                                    startActivity(intent);
-                                    setContentView(R.layout.activity_score_board);
-                                } else {
-                                    Toast.makeText(PlayHard.this,
-                                            R.string.error_save_msg,
-                                            Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
+                            public void run() {
+                                AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
+                                View mView = getLayoutInflater().inflate(R.layout.dialog_new_high_score, null);
+                                final EditText mPlayerName = (EditText) mView.findViewById(R.id.player_name);
 
-                        bShare = (Button) mView.findViewById(R.id.share_button);
-                        bShare.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick (View view) {
-                                shareIntent = new Intent(Intent.ACTION_SEND);
-                                shareIntent.setType("text/plain");
-                                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My App");
-                                shareIntent.putExtra(Intent.EXTRA_TEXT, "I just got a new high score of " +
-                                        score + "! Can you beat it?");
-                                startActivity(Intent.createChooser(shareIntent, "Share via"));
-                            }
-                        });
+                                Button mSaveScore = (Button) mView.findViewById(R.id.save_score_button);
+                                TextView newScore = (TextView) mView.findViewById(R.id.score);
+                                newScore.setText("Score: " + score);
+                                mSaveScore.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        String name = mPlayerName.getText().toString();
+                                        if (!name.isEmpty()) {
+                                            Toast.makeText(PlayHard.this,
+                                                    R.string.success_save_msg,
+                                                    Toast.LENGTH_SHORT).show();
+                                            Bundle b = new Bundle();
+                                            b.putString(NAME_KEY, name);
+                                            b.putInt(SCORE_KEY, score);
+                                            Intent intent = new Intent(PlayHard.this, ScoreActivity.class);
+                                            intent.putExtras(b);
+                                            startActivity(intent);
+                                            setContentView(R.layout.activity_score_board);
+                                        } else {
+                                            Toast.makeText(PlayHard.this,
+                                                    R.string.error_save_msg,
+                                                    Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });
 
-                        mBuilder.setView(mView);
-                        AlertDialog dialog = mBuilder.create();
-                        dialog.show();
+                                bShare = (Button) mView.findViewById(R.id.share_button);
+                                bShare.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        shareIntent = new Intent(Intent.ACTION_SEND);
+                                        shareIntent.setType("text/plain");
+                                        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My App");
+                                        shareIntent.putExtra(Intent.EXTRA_TEXT, "I just got a new high score of " +
+                                                score + "! Can you beat it?");
+                                        startActivity(Intent.createChooser(shareIntent, "Share via"));
+                                    }
+                                });
+
+                                mBuilder.setView(mView);
+                                AlertDialog dialog = mBuilder.create();
+                                dialog.show();
+                            }
+
+                        }, 5000);
                     }
+
+                    // if not a high score
                     else if (score <= thirdScore)
                     {
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
                         View mView = getLayoutInflater().inflate(R.layout.dialog_score, null);
                         ImageButton mContinue = (ImageButton) mView.findViewById(R.id.continue_leaderboard_button);
@@ -406,18 +402,16 @@ public class PlayHard extends BaseActivity {
                         mBuilder.setView(mView);
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();
+                            }
+
+                        }, 5000);
                     }
-<<<<<<< HEAD
-                    db.close();
-                    start_button.setVisibility(View.VISIBLE);
-                    back_button.setVisibility(View.VISIBLE);
-=======
+
 
                     db.close();
                     start_button.setVisibility(View.VISIBLE);
                     back_button.setVisibility(View.VISIBLE);
 
->>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
                 } else if(left > 0){
                     theGameActions();
                 }
