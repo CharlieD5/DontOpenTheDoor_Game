@@ -8,19 +8,13 @@ import android.os.Handler;
 import android.os.Vibrator;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.PopupWindow;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +25,11 @@ import static com.charlyan.dontopenthedoor.ScoreActivity.NAME_KEY;
 import static com.charlyan.dontopenthedoor.ScoreActivity.SCORE_KEY;
 
 /**
+<<<<<<< HEAD
+ *
+ *
+=======
+>>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
  * PlayHard activity is launched by selecting the hard difficulty option after selecting Play Game.
  * Creates 4 clickable image views and creates the game activity. Saves highest score reached in integer
  * score.
@@ -47,9 +46,19 @@ public class PlayHard extends BaseActivity {
     int templeft = 0, left = 1;
     AnimationDrawable an;
 
+<<<<<<< HEAD
+
+    Button bShare;
+    Intent shareIntent;
+
+=======
     Vibrator vibrator;
     Button bShare;
     Intent shareIntent;
+>>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
+
+    //Vibrate Variable
+    Vibrator vibrator;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,10 +67,14 @@ public class PlayHard extends BaseActivity {
 
         //Creates Jump Scare audio File
         MediaPlayer bang = MediaPlayer.create(this, R.raw.bang);
+<<<<<<< HEAD
+        vibrator =(Vibrator) getSystemService(VIBRATOR_SERVICE);
+=======
 
         //Creates Vibrator
         //vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
+>>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
         r = new Random();
 
         start_button = findViewById(R.id.start_button);
@@ -266,9 +279,14 @@ public class PlayHard extends BaseActivity {
 
                 if(left== 0){
 
+<<<<<<< HEAD
+                    //Creates Vibrate
+                    vibrator.vibrate(100);
+=======
                     //Starts Vibrator
                     vibrator.vibrate(100);
 
+>>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
                     db.open();
                     int thirdScore;
                     List<Scores> scoresList = db.getListOfScores();
@@ -300,6 +318,10 @@ public class PlayHard extends BaseActivity {
                         Scores oldScore = scoresList.get(scoresList.size() - 1);
                         thirdScore = Integer.parseInt(oldScore.getScore());
                     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
 
                     if (score > thirdScore) {
                         AlertDialog.Builder mBuilder = new AlertDialog.Builder(PlayHard.this);
@@ -385,11 +407,17 @@ public class PlayHard extends BaseActivity {
                         AlertDialog dialog = mBuilder.create();
                         dialog.show();
                     }
+<<<<<<< HEAD
+                    db.close();
+                    start_button.setVisibility(View.VISIBLE);
+                    back_button.setVisibility(View.VISIBLE);
+=======
 
                     db.close();
                     start_button.setVisibility(View.VISIBLE);
                     back_button.setVisibility(View.VISIBLE);
 
+>>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
                 } else if(left > 0){
                     theGameActions();
                 }

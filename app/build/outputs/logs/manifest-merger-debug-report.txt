@@ -1,9 +1,147 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
+<<<<<<< HEAD
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-37:12
+MERGED from [com.android.support:design:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/39be8562039358f9ce00bf14edd35260/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5b4bc16e88cdb47edc3c6dd198201328/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:transition:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/7a488c74e44c2afb239046b07a692ab1/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2ec6e852c571b30403d5a3d7386e541f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/b33bef380c12999fac3e91349278d005/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/b0e38a090f89655222f6fd020ad4e294/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/95133c60cddaf7e3a5794e910ca19ccf/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/05d539b177e8cd0bbf7bd952c17a82c8/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/0bc83a82c540cc2cc00e99dc2686391a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/4da7c9f217699ed7f2bfe6e8f26f71f0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/c4eac73f57f456aa6ca48804b61ef4f5/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/861dc62c798ca4f6bc04345c742cf60d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cf020ce177fc7d8b6b28815a3bff1b07/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7d8ea6ab6241dbdbf675c79aab7e9762/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:3:11-49
+		INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-37:12
+		INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-37:12
+		INJECTED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:5:22-63
+application
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:7:5-35:19
+MERGED from [com.android.support:design:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/39be8562039358f9ce00bf14edd35260/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/39be8562039358f9ce00bf14edd35260/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/510c1a059c3869b45536b083725c4fb0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0ea34322a9474fa048ab21f889c9e070/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5b4bc16e88cdb47edc3c6dd198201328/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5b4bc16e88cdb47edc3c6dd198201328/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:transition:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/7a488c74e44c2afb239046b07a692ab1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/7a488c74e44c2afb239046b07a692ab1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2ec6e852c571b30403d5a3d7386e541f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2ec6e852c571b30403d5a3d7386e541f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/b33bef380c12999fac3e91349278d005/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/b33bef380c12999fac3e91349278d005/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/b0e38a090f89655222f6fd020ad4e294/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/b0e38a090f89655222f6fd020ad4e294/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/95133c60cddaf7e3a5794e910ca19ccf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/95133c60cddaf7e3a5794e910ca19ccf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/05d539b177e8cd0bbf7bd952c17a82c8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/05d539b177e8cd0bbf7bd952c17a82c8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/0bc83a82c540cc2cc00e99dc2686391a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/0bc83a82c540cc2cc00e99dc2686391a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/4da7c9f217699ed7f2bfe6e8f26f71f0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/4da7c9f217699ed7f2bfe6e8f26f71f0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/c4eac73f57f456aa6ca48804b61ef4f5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/c4eac73f57f456aa6ca48804b61ef4f5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/861dc62c798ca4f6bc04345c742cf60d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/861dc62c798ca4f6bc04345c742cf60d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cf020ce177fc7d8b6b28815a3bff1b07/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cf020ce177fc7d8b6b28815a3bff1b07/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7d8ea6ab6241dbdbf675c79aab7e9762/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/Charlie/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7d8ea6ab6241dbdbf675c79aab7e9762/AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:10:9-49
+	android:roundIcon
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:13:9-52
+activity#com.charlyan.dontopenthedoor.MainActivity
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:14:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:16:17-68
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:18:17-76
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:18:27-74
+activity#com.charlyan.dontopenthedoor.ThemesActivity
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:21:9-22:20
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:21:19-49
+activity#com.charlyan.dontopenthedoor.ShareActivity
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:23:9-24:20
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:23:19-48
+activity#com.charlyan.dontopenthedoor.PlayHard
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:25:9-26:20
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:25:19-43
+activity#com.charlyan.dontopenthedoor.PlayEasy
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:27:9-28:20
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:27:19-43
+activity#com.charlyan.dontopenthedoor.PlayMedium
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:29:9-30:20
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:29:19-45
+activity#com.charlyan.dontopenthedoor.DifficultyActivity
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:31:9-32:20
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:31:19-53
+activity#com.charlyan.dontopenthedoor.ScoreActivity
+ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:33:9-34:20
+	android:name
+		ADDED from /Users/Charlie/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:33:19-48
+=======
+ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-36:12
+=======
 ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-40:12
 INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-40:12
 INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-40:12
 INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:2:1-40:12
+>>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
 MERGED from [com.android.support:design:26.1.0] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2fae5e36f043f0ee298d52d852870f9f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/b5e50a484b07904597c8484351132078/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/lynnreilly/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/c3eecbb86003fef684370331630c6c6d/AndroidManifest.xml:17:1-31:12
@@ -134,7 +272,12 @@ ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/
 	android:theme
 		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:36:13-58
 	android:name
+<<<<<<< HEAD
+		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:31:19-76
+>>>>>>> d7668d40b41544685d2c37cfd36a114d28bf8509
+=======
 		ADDED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml:35:19-40
+>>>>>>> 7ee7619fdd72da2d2344e2ba2ef20ec50b5d42e2
 uses-sdk
 INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/lynnreilly/AndroidStudioProjects/DontOpenTheDoor_Game/app/src/main/AndroidManifest.xml
